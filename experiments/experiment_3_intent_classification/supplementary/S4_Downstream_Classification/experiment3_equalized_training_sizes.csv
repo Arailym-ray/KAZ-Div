@@ -1,0 +1,5 @@
+﻿provider,samples_per_intent,number_of_intents,training_examples_per_method
+openai,41,10,410
+anthropic,27,10,270
+kazllm,37,10,370
+llama,48,10,480

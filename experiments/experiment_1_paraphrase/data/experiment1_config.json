@@ -1,0 +1,44 @@
+{
+  "experiment": "Experiment_1_Kazakh_Paraphrase_Generation_FINAL",
+  "random_seed": 20260922,
+  "model_ids": {
+    "openai": "gpt-5.6-sol",
+    "anthropic": "claude-sonnet-4-6",
+    "kazllm": "issai/LLama-3.1-KazLLM-1.0-8B",
+    "llama": "NousResearch/Meta-Llama-3.1-8B-Instruct"
+  },
+  "providers": [
+    "openai",
+    "anthropic",
+    "kazllm",
+    "llama"
+  ],
+  "local_providers": [
+    "kazllm",
+    "llama"
+  ],
+  "methods": [
+    "baseline",
+    "kazdiv"
+  ],
+  "n_repeats": 5,
+  "k_candidates": 12,
+  "max_kazdiv_calls": 2,
+  "max_output_tokens": 1200,
+  "generation_temperature": 0.6,
+  "local_top_p": 1.0,
+  "openai_reasoning_effort": "none",
+  "fidelity_min": 0.75,
+  "length_ratio": [
+    0.45,
+    2.2
+  ],
+  "pilot_near_duplicate_threshold": 0.95,
+  "embedding_model": "BAAI/bge-m3",
+  "embedding_pooling": "CLS + L2 normalization",
+  "stateless": true,
+  "uses_conversation_history": false,
+  "uses_previous_responses": false,
+  "uses_cumulative_statistics": false,
+  "local_model_loading": "lazy; one local generative model at a time"
+}

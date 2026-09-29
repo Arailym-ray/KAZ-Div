@@ -1,0 +1,12 @@
+{
+  "mode": "main",
+  "updated_at": "2026-09-25T08:07:39.956941",
+  "total_tasks": 1000,
+  "finalized_tasks": 2000,
+  "successful_outputs": 1995,
+  "method_failures": 5,
+  "remaining_tasks": -1000,
+  "success_this_session": 998,
+  "method_failures_this_session": 2,
+  "technical_failures_this_session": 0
+}

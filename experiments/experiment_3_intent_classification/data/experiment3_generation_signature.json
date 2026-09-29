@@ -1,0 +1,40 @@
+{
+  "signature": "a6a9d483fdd58f6ce2678b0c146de84827f32a393b7ffa14464661b967177ece",
+  "created_or_checked_at": "2026-09-27T12:58:12.684919",
+  "configuration": {
+    "experiment": "Experiment_3_Synthetic_Kazakh_Intent_Data",
+    "random_seed": 20260922,
+    "intent_definitions_hash": "37c00fa4d0fcba0650d814e1c3297354ad43604cf064f2e054a1c329ad08a5ac",
+    "model_ids": {
+      "openai": "gpt-5.6-sol",
+      "anthropic": "claude-sonnet-4-6",
+      "kazllm": "issai/LLama-3.1-KazLLM-1.0-8B",
+      "llama": "NousResearch/Meta-Llama-3.1-8B-Instruct"
+    },
+    "providers": [
+      "openai",
+      "anthropic",
+      "kazllm",
+      "llama"
+    ],
+    "methods": [
+      "baseline",
+      "kazdiv"
+    ],
+    "n_synthetic_per_intent": 50,
+    "k_candidates": 12,
+    "max_kazdiv_calls": 2,
+    "min_utterance_words": 2,
+    "max_utterance_words": 30,
+    "require_target_top1": true,
+    "intent_score_min": null,
+    "intent_margin_min": 0.02,
+    "semantic_duplicate_threshold": 0.95,
+    "embedding_model": "BAAI/bge-m3",
+    "embedding_pooling": "CLS",
+    "llama_temperature": 0.6,
+    "llama_top_p": 1.0,
+    "baseline_prompt_template": "Тапсырма:\n\nТөменде бір intent (пайдаланушы ниеті) берілген.\nОсы intent-ке сәйкес қазақ тілінде бір табиғи пайдаланушы хабарламасын құрастырыңыз.\n\nIntent атауы:\n{intent_name}\n\nIntent сипаттамасы:\n{intent_description}\n\nТалаптар:\n\n1. Хабарлама дәл осы intent-ті білдіруі тиіс.\n2. Басқа intent-ке жататын мағына қоспаңыз.\n3. Хабарлама күнделікті қолданушының табиғи сөзі сияқты болуы тиіс.\n4. Қысқа, бірақ мағыналы сөйлем немесе қысқа хабарлама жазыңыз.\n5. Intent атауын механикалық түрде қайталамаңыз.\n6. \"intent\", \"класс\", \"санат\", \"label\" сияқты техникалық сөздерді қолданбаңыз.\n7. Түсіндірме, нөмірлеу немесе қосымша мәтін қоспаңыз.\n8. Тек төмендегі JSON форматында жауап беріңіз.\n\nJSON:\n\n{{\n  \"utterance\": \"қазақ тіліндегі пайдаланушы хабарламасы\"\n}}",
+    "kazdiv_prompt_template": "Тапсырма:\n\nТөменде бір intent (пайдаланушы ниеті) берілген.\nОсы intent-ке сәйкес қазақ тілінде {k_candidates} түрлі табиғи пайдаланушы хабарламасын құрастырыңыз.\n\nIntent атауы:\n{intent_name}\n\nIntent сипаттамасы:\n{intent_description}\n\nТалаптар:\n\n1. Барлық хабарлама дәл осы intent-ті білдіруі тиіс.\n2. Басқа intent-ке жататын мағына қоспаңыз.\n3. Хабарламалар күнделікті қолданушының табиғи сөзі сияқты болуы тиіс.\n4. Хабарламалар бір-бірінен лексикалық және мүмкін болған жағдайда синтаксистік тұрғыдан ерекшеленуі тиіс.\n5. Бірдей немесе өте ұқсас нұсқаларды қайталамаңыз.\n6. Тек сөздердің орнын ауыстырумен шектелмеңіз.\n7. Intent атауын механикалық түрде қайталамаңыз.\n8. \"intent\", \"класс\", \"санат\", \"label\" сияқты техникалық сөздерді қолданбаңыз.\n9. Дәл {k_candidates} хабарлама жасаңыз.\n10. Ешқандай түсіндірме немесе қосымша мәтін қоспаңыз.\n11. Тек төмендегі JSON форматында жауап беріңіз.\n\nJSON:\n\n{{\n  \"candidates\": [\n    {{\"utterance\": \"1-нұсқа\"}},\n    {{\"utterance\": \"2-нұсқа\"}}\n  ]\n}}"
+  }
+}

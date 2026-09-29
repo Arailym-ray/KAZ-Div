@@ -1,0 +1,10 @@
+{
+  "experiment": "Experiment_3_Synthetic_Kazakh_Intent_Data",
+  "updated_at": "2026-09-29T18:53:36.351321",
+  "total_generation_tasks": 4000,
+  "successful": 3965,
+  "method_failures": 35,
+  "finalized": 4000,
+  "remaining": 0,
+  "complete": true
+}

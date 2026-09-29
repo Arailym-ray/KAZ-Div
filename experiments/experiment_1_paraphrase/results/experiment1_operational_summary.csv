@@ -1,0 +1,5 @@
+﻿provider,method,finalized_observations,successful_outputs,mean_llm_calls,mean_input_tokens,mean_output_tokens,mean_total_tokens,mean_llm_latency_sec,mean_pipeline_latency_sec,mean_estimated_api_cost_usd,success_rate
+kazllm,baseline,500,500,1.0,503.32,61.844,565.164,0.9469137803680069,1.0400887800860061,0.0,1.0
+kazllm,kazdiv,500,497,1.106,687.406,866.136,1553.542,12.902364392291972,12.911417588654027,0.0,0.994
+llama,baseline,500,500,1.0,478.32,94.826,573.146,1.4212752863440146,1.5111196836099843,0.0,1.0
+llama,kazdiv,500,498,1.032,615.35,849.91,1465.26,12.656952465945967,12.668165520926028,0.0,0.996

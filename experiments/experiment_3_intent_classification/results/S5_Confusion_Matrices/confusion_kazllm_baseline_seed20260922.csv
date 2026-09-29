@@ -1,0 +1,11 @@
+﻿true_intent,registration,price,schedule,location,payment,refund,certificate,technical_problem,course_duration,teacher_information
+registration,81,8,4,7,0,0,0,0,0,0
+price,0,100,0,0,0,0,0,0,0,0
+schedule,0,5,88,6,0,0,0,0,0,1
+location,5,3,3,85,2,0,0,0,0,2
+payment,0,12,1,4,82,1,0,0,0,0
+refund,0,3,0,8,20,69,0,0,0,0
+certificate,0,10,1,1,0,1,87,0,0,0
+technical_problem,0,2,3,5,7,0,0,83,0,0
+course_duration,0,61,2,7,0,0,0,0,29,1
+teacher_information,0,11,8,7,0,8,0,0,2,64

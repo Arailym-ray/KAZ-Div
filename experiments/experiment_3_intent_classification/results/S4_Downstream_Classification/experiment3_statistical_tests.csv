@@ -1,0 +1,5 @@
+provider,classifier_seed,baseline_correct_kazdiv_wrong_b,baseline_wrong_kazdiv_correct_c,mcnemar_exact_p,macro_f1_difference_kazdiv_minus_baseline,bootstrap_95_ci_low,bootstrap_95_ci_high,mcnemar_holm_p
+openai,20260922,18,412,2.074226e-98,0.384084,0.353398,0.416531,8.296904e-98
+anthropic,20260922,46,280,4.59262e-42,0.226567,0.195713,0.259995,1.377786e-41
+kazllm,20260922,46,89,0.0002697984,0.047593,0.025125,0.07045,0.0005395967
+llama,20260922,59,54,0.7068823,0.001156,-0.020359,0.022459,0.7068823
