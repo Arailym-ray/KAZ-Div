@@ -1,19 +1,25 @@
 # Experiment 2 status
 
-The final four-model code is included, but the last recovered main-generation
-results file is **not a complete 4,000-task run**.
+**Status: complete.**
 
-Recovered state:
+The final full run contains 4,000 scheduled observations:
 
-- rows recorded: 1,856
-- successful tasks: 1,636
-- terminal method failures: 204
-- retryable technical failures: 16
-- finalized tasks: 1,840
-- expected total tasks: 4,000
+- 100 source passages
+- 4 language models
+- 2 generation methods: Baseline and KAZ-Div
+- 5 repetitions per source/model/method
 
-The file under `results_partial/` is retained for recovery and audit purposes.
-It must **not** be cited as the final Experiment 2 result set.
+The final result set is stored in:
 
-Replace this folder with the completed results package before making the
-repository public as the definitive reproducibility archive for the paper.
+`results/experiment2_main_results.csv`
+
+The repository also includes source-level metrics, primary summary metrics,
+paired statistical tests, operational metrics, failure summaries, and
+candidate-pool diagnostics.
+
+Important interpretation note:
+KazLLM Baseline had a substantially lower generation success rate because of
+output-parsing failures. Consequently, only two KazLLM source passages formed
+complete five-repetition Baseline/KAZ-Div pairs. Paired KazLLM diversity
+statistics should therefore not be interpreted on the same evidential basis
+as OpenAI, Anthropic, or Llama.

@@ -2,7 +2,7 @@
 
 **KAZ-Div: A Stateless Model-Agnostic Framework for Quality-Constrained Diversity in Kazakh Language Generation**
 
-This repository contains the reproducibility code, frozen experimental inputs,
+This repository contains reproducibility code, frozen experimental inputs,
 result files, and supplementary materials for three complementary evaluations
 of KAZ-Div.
 
@@ -18,9 +18,7 @@ Status: **complete**.
 Evaluates whether repeated generation covers different answerable aspects of a
 source passage while maintaining grounding and answerability.
 
-Status in this repository snapshot: **code complete; recovered result file is
-partial and is not the final paper result set**. See
-`experiments/experiment_2_question_generation/STATUS.md`.
+Status: **complete**. The final run contains 4,000 scheduled observations.
 
 ### 3. Synthetic Kazakh intent data and downstream classification
 Evaluates whether diversity-controlled synthetic training data improves
@@ -46,37 +44,22 @@ KAZ-Div/
 ├── README.md
 ├── CITATION.cff
 ├── requirements.txt
-├── .gitignore
-├── .gitattributes
 ├── MANIFEST.csv
 └── experiments/
     ├── experiment_1_paraphrase/
-    │   ├── code/
-    │   ├── data/
-    │   ├── results/
-    │   └── supplementary/
     ├── experiment_2_question_generation/
     │   ├── code/
     │   ├── data/
-    │   ├── results_partial/
-    │   └── STATUS.md
+    │   └── results/
     └── experiment_3_intent_classification/
-        ├── code/
-        ├── data/
-        ├── results/
-        └── supplementary/
 ```
 
 ## KAZ-Div procedure
 
-For each request, KAZ-Div uses a temporary candidate pool and applies:
-
-1. multi-candidate generation;
-2. task-specific quality filtering;
-3. normalized exact deduplication;
-4. semantic near-duplicate clustering;
-5. fidelity-aware representative selection within each cluster;
-6. deterministic random selection among cluster representatives.
+For each request, KAZ-Div uses a temporary candidate pool and applies
+multi-candidate generation, task-specific quality filtering, exact
+deduplication, semantic near-duplicate clustering, representative selection,
+and final diversity-aware selection.
 
 The framework is stateless across independent requests: previous generated
 outputs, previous candidate pools, and conversation history are not used to
@@ -85,43 +68,18 @@ influence subsequent requests.
 ## Reproducibility notes
 
 API-based model outputs can change as hosted model implementations evolve.
-Model identifiers, frozen thresholds, prompts, random seeds, and result
-signatures are therefore retained wherever available.
+Model identifiers, frozen thresholds, prompts, random seeds, runtime metadata,
+and result files are therefore retained wherever available.
 
-API credentials are **not** included in this repository. Supply credentials via
-environment variables or a secrets manager, for example:
-
-```bash
-export OPENAI_API_KEY="..."
-export ANTHROPIC_API_KEY="..."
-```
-
-For gated Hugging Face models, authenticate separately using the Hugging Face
-CLI or notebook login.
-
-## Installation
-
-A typical Python environment can be prepared with:
-
-```bash
-pip install -r requirements.txt
-```
-
-GPU-backed execution is recommended for the locally deployed 8B models and
-BGE-M3 embedding computation.
+API credentials are not included in this repository.
 
 ## Data and results
 
-The repository retains final analysis-ready outputs for Experiments 1 and 3.
-Experiment 2 currently contains the latest recovered partial main-generation
-file only and is explicitly marked as incomplete.
+Final analysis-ready outputs are provided for all three experiments. Each
+experiment directory contains the code and the corresponding frozen inputs and
+results required to audit the reported analyses.
 
 ## Citation
 
 Please cite the accompanying paper if you use the framework, code, or released
 experimental materials.
-
-## License
-
-A repository-wide licence has not yet been assigned. Select and add a licence
-before public release.

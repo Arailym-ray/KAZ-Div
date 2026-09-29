@@ -1,6 +1,6 @@
 {
   "experiment": "Experiment_2_Diverse_Question_Generation",
-  "run_mode": "pilot",
+  "run_mode": "full",
   "random_seed": 20260922,
   "model_ids": {
     "openai": "gpt-5.6-sol",
@@ -33,7 +33,7 @@
     20
   ],
   "question_near_duplicate_threshold": 0.95,
-  "threshold_frozen": false,
+  "threshold_frozen": true,
   "question_relevance_min": null,
   "embedding_model": "BAAI/bge-m3",
   "embedding_pooling": "CLS + L2 normalization",

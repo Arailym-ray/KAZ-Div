@@ -3,6 +3,7 @@
   "transformers_version": "5.17.0",
   "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
   "gpu_total_gb": 94.971,
+  "local_dtype": "torch.bfloat16",
   "kazllm_model_id": "issai/LLama-3.1-KazLLM-1.0-8B",
   "kazllm_commit_hash": "015343c542fa469d5c5439ed48a9dd407a5637a9",
   "llama_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
@@ -10,5 +11,6 @@
   "bge_model_id": "BAAI/bge-m3",
   "bge_commit_hash": "5617a9f61b028005a4858fdac845db406aefb181",
   "embedding_dimension": 1024,
-  "embedding_pooling": "CLS + L2 normalization"
+  "embedding_pooling": "CLS + L2 normalization",
+  "hf_authenticated": true
 }

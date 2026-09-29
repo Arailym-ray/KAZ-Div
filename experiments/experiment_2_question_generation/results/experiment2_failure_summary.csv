@@ -1,0 +1,7 @@
+provider,method,failure_type,failure_stage,count
+kazllm,baseline,method_failure,parsing,393
+kazllm,kazdiv,method_failure,parsing,24
+kazllm,kazdiv,method_failure,quality_filter,1
+llama,baseline,method_failure,parsing,4
+llama,kazdiv,method_failure,parsing,3
+llama,kazdiv,method_failure,quality_filter,8
