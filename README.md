@@ -1,6 +1,8 @@
 # KAZ-Div
 
 **KAZ-Div: A Stateless Model-Agnostic Framework for Quality-Constrained Diversity in Kazakh Language Generation**
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/924bdfe6-b2fb-47e8-a2bb-2567b377820a" />
+
 
 This repository contains reproducibility code, frozen experimental inputs, result files, audit materials, and supplementary outputs for three primary evaluations of KAZ-Div and a stage-wise ablation analysis.
 
