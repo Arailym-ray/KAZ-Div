@@ -2,29 +2,29 @@
 
 **KAZ-Div: A Stateless Model-Agnostic Framework for Quality-Constrained Diversity in Kazakh Language Generation**
 
-This repository contains reproducibility code, frozen experimental inputs,
-result files, and supplementary materials for three complementary evaluations
-of KAZ-Div.
+This repository contains reproducibility code, frozen experimental inputs, result files, audit materials, and supplementary outputs for three primary evaluations of KAZ-Div and a stage-wise ablation analysis.
 
 ## Experiments
 
 ### 1. Kazakh paraphrase generation
-Evaluates lexical, structural, and semantic diversity while preserving source
-meaning and linguistic quality.
+Evaluates lexical, structural, and semantic diversity while preserving source meaning and linguistic quality.
 
 Status: **complete**.
 
 ### 2. Diverse grounded Kazakh question generation
-Evaluates whether repeated generation covers different answerable aspects of a
-source passage while maintaining grounding and answerability.
+Evaluates whether repeated generation covers different answerable aspects of a source passage while maintaining grounding and answerability.
 
-Status: **complete**. The final run contains 4,000 scheduled observations.
+Status: **complete**. The final run contains 4,000 scheduled observations. A KazLLM-specific audit rerun with raw-output capture is included to support analysis of Baseline parsing failures.
 
 ### 3. Synthetic Kazakh intent data and downstream classification
-Evaluates whether diversity-controlled synthetic training data improves
-downstream intent classification on an independent human-written test set.
+Evaluates whether diversity-controlled synthetic training data improves downstream intent classification on an independent human-written test set.
 
 Status: **complete**.
+
+### 4. Stage-wise ablation analysis
+Separates the contribution of multi-candidate generation, quality filtering, and semantic curation using four conditions: B0 Baseline, B1 Multi-Candidate Random, B2 Quality-Filtered Random, and B3 Full KAZ-Div.
+
+Status: **complete**. Full descriptive results and planned paired contrasts are provided with the Experiment 4 materials.
 
 ## Evaluated language models
 
@@ -33,9 +33,7 @@ Status: **complete**.
 - `issai/LLama-3.1-KazLLM-1.0-8B`
 - `NousResearch/Meta-Llama-3.1-8B-Instruct`
 
-The purpose of the study is not to rank the language models. The models provide
-heterogeneous proprietary and open-weight settings in which the relative effect
-of Baseline versus KAZ-Div is evaluated.
+The purpose of the study is not to rank the language models. The models provide heterogeneous proprietary and open-weight settings in which the relative effect of Baseline versus KAZ-Div and the behaviour of the framework stages are evaluated.
 
 ## Repository structure
 
@@ -50,36 +48,32 @@ KAZ-Div/
     ├── experiment_2_question_generation/
     │   ├── code/
     │   ├── data/
-    │   └── results/
-    └── experiment_3_intent_classification/
+    │   ├── results/
+    │   └── Experiment_2_Question_Generation_KazLLM/
+    ├── experiment_3_intent_classification/
+    └── experiment_4_ablation/
+        ├── README.md
+        ├── results/
+        ├── supplementary_table_S14_stage_wise_ablation.csv
+        └── supplementary_table_S15_planned_paired_contrasts.csv
 ```
 
 ## KAZ-Div procedure
 
-For each request, KAZ-Div uses a temporary candidate pool and applies
-multi-candidate generation, task-specific quality filtering, exact
-deduplication, semantic near-duplicate clustering, representative selection,
-and final diversity-aware selection.
+For each request, KAZ-Div uses a temporary candidate pool and applies multi-candidate generation, task-specific quality filtering, exact deduplication, semantic near-duplicate clustering, representative selection, and final diversity-aware selection.
 
-The framework is stateless across independent requests: previous generated
-outputs, previous candidate pools, and conversation history are not used to
-influence subsequent requests.
+The framework is stateless across independent requests: previous generated outputs, previous candidate pools, and conversation history are not used to influence subsequent requests.
 
 ## Reproducibility notes
 
-API-based model outputs can change as hosted model implementations evolve.
-Model identifiers, frozen thresholds, prompts, random seeds, runtime metadata,
-and result files are therefore retained wherever available.
+API-based model outputs can change as hosted model implementations evolve. Model identifiers, frozen thresholds, prompts, random seeds, runtime metadata, result files, and audit outputs are therefore retained wherever available.
 
 API credentials are not included in this repository.
 
 ## Data and results
 
-Final analysis-ready outputs are provided for all three experiments. Each
-experiment directory contains the code and the corresponding frozen inputs and
-results required to audit the reported analyses.
+Final analysis-ready outputs are provided for the three primary experiments. Experiment 4 provides a post-hoc stage-wise ablation of Experiment 1 using frozen candidate pools and no new LLM calls. The Experiment 2 directory additionally includes a KazLLM-only audit rerun with raw-output capture for parsing-failure analysis.
 
 ## Citation
 
-Please cite the accompanying paper if you use the framework, code, or released
-experimental materials.
+Please cite the accompanying paper if you use the framework, code, or released experimental materials.
