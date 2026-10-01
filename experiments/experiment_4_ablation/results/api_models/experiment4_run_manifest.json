@@ -1,0 +1,52 @@
+{
+  "experiment": "Experiment 4 - Stage-Wise Ablation Analysis",
+  "input": "/content/experiment1_results.jsonl",
+  "new_llm_calls": 0,
+  "random_seed": 20260922,
+  "providers": [
+    "anthropic",
+    "openai"
+  ],
+  "conditions": [
+    "B0_baseline",
+    "B1_multi_candidate_random",
+    "B2_quality_filtered_random",
+    "B3_full_kazdiv"
+  ],
+  "n_repeats": 5,
+  "k_candidates": 12,
+  "fidelity_min": 0.75,
+  "min_length_ratio": 0.45,
+  "max_length_ratio": 2.2,
+  "embedding_model": "BAAI/bge-m3",
+  "embedding_pooling": "CLS + L2 normalization",
+  "candidate_pool_policy": "B1/B2 use only the successful KAZ-Div attempt that produced B3; raw candidate occurrences are preserved before deduplication.",
+  "b1_policy": "uniform random raw candidate occurrence",
+  "b2_policy": "quality filter on raw candidate occurrences; uniform random valid occurrence; no exact/semantic dedup",
+  "b3_policy": "existing Experiment 1 full KAZ-Div output",
+  "observation_rows": 4000,
+  "complete_case_sources_by_provider": {
+    "anthropic": 100,
+    "openai": 100
+  },
+  "planned_contrasts": [
+    {
+      "a": "B0_baseline",
+      "b": "B1_multi_candidate_random",
+      "name": "B1_minus_B0"
+    },
+    {
+      "a": "B1_multi_candidate_random",
+      "b": "B2_quality_filtered_random",
+      "name": "B2_minus_B1"
+    },
+    {
+      "a": "B2_quality_filtered_random",
+      "b": "B3_full_kazdiv",
+      "name": "B3_minus_B2"
+    }
+  ],
+  "n_bootstrap": 10000,
+  "n_permutations": 20000,
+  "holm_family": "all 21 planned tests (3 contrasts x 7 metrics) within each provider/model"
+}

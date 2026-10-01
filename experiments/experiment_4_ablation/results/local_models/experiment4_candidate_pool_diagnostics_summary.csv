@@ -1,0 +1,3 @@
+﻿provider,model_id,request_pools,mean_raw_pool_size,proportion_exact_k,mean_unique_raw_candidates,mean_exact_duplicate_occurrences,mean_valid_raw_occurrences,mean_unique_valid_candidates,mean_saved_semantic_clusters,mean_saved_semantic_duplicates_removed
+kazllm,issai/LLama-3.1-KazLLM-1.0-8B,497,12.267605633802816,0.7525150905432596,4.959758551307847,7.30784708249497,11.460764587525151,4.694164989939638,1.9839034205231387,2.710261569416499
+llama,NousResearch/Meta-Llama-3.1-8B-Instruct,498,12.524096385542169,0.4939759036144578,11.30722891566265,1.216867469879518,11.401606425702811,10.289156626506024,5.198795180722891,5.090361445783133

@@ -1,0 +1,20 @@
+# Table S14. Stage-wise ablation results for Kazakh paraphrase generation.
+
+| Model | Stage | Unique Rate | Distinct-1 | Distinct-2 | Semantic Diversity | Self-BLEU | Mean Fidelity | Quality Pass Rate |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| GPT-5.6 Sol | B0 Baseline | 0.600 | 0.273 | 0.322 | 0.026 | 0.931 | 0.908 | 0.998 |
+| GPT-5.6 Sol | B1 Multi-Candidate Random | 0.982 | 0.532 | 0.736 | 0.104 | 0.534 | 0.922 | 1.000 |
+| GPT-5.6 Sol | B2 Quality-Filtered Random | 0.982 | 0.536 | 0.738 | 0.102 | 0.533 | 0.924 | 1.000 |
+| GPT-5.6 Sol | B3 Full KAZ-Div | 0.966 | 0.527 | 0.719 | 0.102 | 0.553 | 0.921 | 1.000 |
+| Claude Sonnet 4.6 | B0 Baseline | 0.948 | 0.420 | 0.559 | 0.089 | 0.722 | 0.850 | 0.964 |
+| Claude Sonnet 4.6 | B1 Multi-Candidate Random | 0.994 | 0.616 | 0.833 | 0.143 | 0.388 | 0.895 | 1.000 |
+| Claude Sonnet 4.6 | B2 Quality-Filtered Random | 1.000 | 0.613 | 0.831 | 0.143 | 0.392 | 0.896 | 1.000 |
+| Claude Sonnet 4.6 | B3 Full KAZ-Div | 1.000 | 0.622 | 0.840 | 0.143 | 0.383 | 0.895 | 1.000 |
+| LLama-3.1-KazLLM-1.0-8B | B0 Baseline | 0.845 | 0.358 | 0.474 | 0.069 | 0.787 | 0.955 | 0.728 |
+| LLama-3.1-KazLLM-1.0-8B | B1 Multi-Candidate Random | 0.948 | 0.387 | 0.536 | 0.095 | 0.737 | 0.931 | 0.932 |
+| LLama-3.1-KazLLM-1.0-8B | B2 Quality-Filtered Random | 0.955 | 0.388 | 0.546 | 0.094 | 0.728 | 0.930 | 1.000 |
+| LLama-3.1-KazLLM-1.0-8B | B3 Full KAZ-Div | 0.932 | 0.377 | 0.523 | 0.094 | 0.747 | 0.934 | 1.000 |
+| Meta-Llama-3.1-8B-Instruct | B0 Baseline | 0.978 | 0.419 | 0.572 | 0.179 | 0.614 | 0.872 | 0.765 |
+| Meta-Llama-3.1-8B-Instruct | B1 Multi-Candidate Random | 1.000 | 0.553 | 0.746 | 0.186 | 0.476 | 0.867 | 0.898 |
+| Meta-Llama-3.1-8B-Instruct | B2 Quality-Filtered Random | 1.000 | 0.540 | 0.739 | 0.172 | 0.481 | 0.879 | 1.000 |
+| Meta-Llama-3.1-8B-Instruct | B3 Full KAZ-Div | 1.000 | 0.539 | 0.731 | 0.172 | 0.492 | 0.881 | 1.000 |

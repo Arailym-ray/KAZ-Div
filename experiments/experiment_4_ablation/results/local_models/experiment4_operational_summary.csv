@@ -1,0 +1,9 @@
+﻿provider,model_id,condition,observations,successful_outputs,mean_fidelity,mean_raw_pool_size,mean_quality_valid_raw_occurrences,success_rate
+kazllm,issai/LLama-3.1-KazLLM-1.0-8B,B0_baseline,500,500,0.9550551173686981,1.0,0.726,1.0
+kazllm,issai/LLama-3.1-KazLLM-1.0-8B,B1_multi_candidate_random,497,497,0.9318735955706544,12.267605633802816,11.460764587525151,1.0
+kazllm,issai/LLama-3.1-KazLLM-1.0-8B,B2_quality_filtered_random,497,497,0.930411372386234,12.267605633802816,11.460764587525151,1.0
+kazllm,issai/LLama-3.1-KazLLM-1.0-8B,B3_full_kazdiv,500,497,0.9348708223289167,12.244,4.675350701402806,0.994
+llama,NousResearch/Meta-Llama-3.1-8B-Instruct,B0_baseline,500,500,0.8724075398445129,1.0,0.766,1.0
+llama,NousResearch/Meta-Llama-3.1-8B-Instruct,B1_multi_candidate_random,498,498,0.8670182111990978,12.524096385542169,11.401606425702811,1.0
+llama,NousResearch/Meta-Llama-3.1-8B-Instruct,B2_quality_filtered_random,498,498,0.8791633143003685,12.524096385542169,11.401606425702811,1.0
+llama,NousResearch/Meta-Llama-3.1-8B-Instruct,B3_full_kazdiv,500,498,0.8814325707265173,12.474,10.268537074148297,0.996

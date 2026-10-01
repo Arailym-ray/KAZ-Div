@@ -1,0 +1,9 @@
+﻿provider,model_id,condition,observations,successful_outputs,mean_fidelity,mean_raw_pool_size,mean_quality_valid_raw_occurrences,success_rate
+anthropic,claude-sonnet-4-6,B0_baseline,500,500,0.8497721291780472,1.0,0.964,1.0
+anthropic,claude-sonnet-4-6,B1_multi_candidate_random,500,500,0.8949144459962844,12.0,11.97,1.0
+anthropic,claude-sonnet-4-6,B2_quality_filtered_random,500,500,0.8961420129537583,12.0,11.97,1.0
+anthropic,claude-sonnet-4-6,B3_full_kazdiv,500,500,0.8947658681869507,12.0,11.968,1.0
+openai,gpt-5.6-sol,B0_baseline,500,500,0.9080816149711609,1.0,0.998,1.0
+openai,gpt-5.6-sol,B1_multi_candidate_random,500,500,0.9220993797779083,12.0,11.998,1.0
+openai,gpt-5.6-sol,B2_quality_filtered_random,500,500,0.9236371549367904,12.0,11.998,1.0
+openai,gpt-5.6-sol,B3_full_kazdiv,500,500,0.9213453627824784,12.0,11.998,1.0
