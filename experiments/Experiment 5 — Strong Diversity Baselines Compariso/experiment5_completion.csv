@@ -1,0 +1,4 @@
+﻿provider,method,finalized,successes,mean_tokens,latency_s,mean_api_cost_usd,completion_rate
+openai,diversity_prompt,500,500,337.32,2.992988,,1.0
+openai,high_temperature,500,500,265.394,2.967016,,1.0
+openai,taboo_word,500,500,352.41,2.981986,,1.0

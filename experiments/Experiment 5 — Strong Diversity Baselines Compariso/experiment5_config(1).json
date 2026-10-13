@@ -1,0 +1,26 @@
+{
+  "sources_sha256": "3fcddcf5af5fb777300117757693c4fbdb84a74feccc3b24d25414007b1cb661",
+  "baseline_prompt_sha256": "0ad52e8541cc1ce98698d549f5f77a11658858a125a59944f50cb1d4616e14b5",
+  "scope": "full",
+  "source_count": 100,
+  "repeats": 5,
+  "model_ids": {
+    "openai": "gpt-5.6-sol",
+    "anthropic": "claude-sonnet-4-6",
+    "kazllm": "issai/LLama-3.1-KazLLM-1.0-8B",
+    "llama": "NousResearch/Meta-Llama-3.1-8B-Instruct"
+  },
+  "planned_methods": [
+    "diversity_prompt",
+    "high_temperature",
+    "taboo_word"
+  ],
+  "base_temperature": 0.6,
+  "high_temperature": 1.0,
+  "max_output_tokens": 1200,
+  "local_top_p": 1.0,
+  "use_4bit_local": true,
+  "embedding": "BAAI/bge-m3 CLS L2",
+  "seed": 20260922,
+  "note": "taboo_word is a Kazakh source-aware adaptation, not an exact ACL 2024 reproduction."
+}
