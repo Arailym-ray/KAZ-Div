@@ -1,0 +1,9 @@
+provider,method,raw_rows,test_overlap_rows
+anthropic,baseline,270,0
+anthropic,kazdiv,270,0
+kazllm,baseline,370,0
+kazllm,kazdiv,370,0
+llama,baseline,480,0
+llama,kazdiv,480,0
+openai,baseline,410,0
+openai,kazdiv,410,0

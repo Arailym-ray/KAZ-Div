@@ -1,0 +1,17 @@
+{
+  "classifier": "tfidf_lr",
+  "provider": "anthropic",
+  "mode": "unique_matched",
+  "method": "kazdiv",
+  "seed": 20260923,
+  "n_train": 104,
+  "n_unique_train": 104,
+  "sample_sha256": "b83a29441d2ef91c0164a6876d03972882ccbcee57aee35c28567057a2e0a6e0",
+  "config_sha256": "c0742d3a18824a566427b9719863bf45d83b12b899c772dd4f7a73652937eb8c",
+  "test_rows": 1000,
+  "accuracy": 0.712,
+  "macro_f1": 0.6912851679575196,
+  "weighted_f1": 0.6912851679575197,
+  "train_eval_seconds": 1.619303655999829,
+  "predictions_path": "/content/KAZ_Div_Experiment8_Results/predictions__tfidf_lr__anthropic__unique_matched__kazdiv__20260923.csv"
+}

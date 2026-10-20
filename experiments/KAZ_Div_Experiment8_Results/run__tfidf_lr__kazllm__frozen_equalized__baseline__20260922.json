@@ -1,0 +1,17 @@
+{
+  "classifier": "tfidf_lr",
+  "provider": "kazllm",
+  "mode": "frozen_equalized",
+  "method": "baseline",
+  "seed": 20260922,
+  "n_train": 370,
+  "n_unique_train": 360,
+  "sample_sha256": "e61879b83725c02dfd5e6839142c9cd3de08087a58bc34562ca45f6194a2a52a",
+  "config_sha256": "c0742d3a18824a566427b9719863bf45d83b12b899c772dd4f7a73652937eb8c",
+  "test_rows": 1000,
+  "accuracy": 0.768,
+  "macro_f1": 0.7673552917305366,
+  "weighted_f1": 0.7673552917305367,
+  "train_eval_seconds": 1.6184956059996694,
+  "predictions_path": "/content/KAZ_Div_Experiment8_Results/predictions__tfidf_lr__kazllm__frozen_equalized__baseline__20260922.csv"
+}

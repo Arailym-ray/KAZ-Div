@@ -1,0 +1,38 @@
+{
+  "source_commit": "15de1fceb89b2c2d94cde1724dadbb52d281d3e5",
+  "source_urls": {
+    "train": "https://raw.githubusercontent.com/Arailym-ray/KAZ-Div/15de1fceb89b2c2d94cde1724dadbb52d281d3e5/experiments/experiment_3_intent_classification/results/S4_Downstream_Classification/experiment3_downstream_training_corpus.csv",
+    "test": "https://raw.githubusercontent.com/Arailym-ray/KAZ-Div/15de1fceb89b2c2d94cde1724dadbb52d281d3e5/experiments/experiment_3_intent_classification/data/experiment3_human_test_frozen.csv",
+    "original_report": "https://raw.githubusercontent.com/Arailym-ray/KAZ-Div/15de1fceb89b2c2d94cde1724dadbb52d281d3e5/experiments/experiment_3_intent_classification/results/S4_Downstream_Classification/experiment3_classifier_summary.csv"
+  },
+  "source_sha256": {
+    "train": "b359652af93794e995dca34c2f1ec6b8f02ac3bf7014a904445bc21ee2aeb486",
+    "test": "df417d09a7ef2fa243b7e9e4408fedf861c6ecadb27a5a48a4dae83206c3a155"
+  },
+  "train_rows_raw": 3060,
+  "train_rows_after_leakage_removal": 3060,
+  "test_rows": 1000,
+  "test_unique_normalized_texts": 1000,
+  "labels": [
+    "certificate",
+    "course_duration",
+    "location",
+    "payment",
+    "price",
+    "refund",
+    "registration",
+    "schedule",
+    "teacher_information",
+    "technical_problem"
+  ],
+  "configured_providers": [
+    "openai",
+    "anthropic",
+    "kazllm",
+    "llama"
+  ],
+  "modes": [
+    "frozen_equalized",
+    "unique_matched"
+  ]
+}

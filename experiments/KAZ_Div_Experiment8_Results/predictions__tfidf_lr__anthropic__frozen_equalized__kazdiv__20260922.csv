@@ -1,0 +1,1001 @@
+test_row_id,text,intent_id,prediction,correct
+0,Маған сабақтар неше айға жоспарланған?,course_duration,schedule,False
+1,"Сәлеметсіз бе, курс өтетін орын қайда?",location,location,True
+2,Оқу ақысы қанша тұрады?,price,price,True
+3,Маған сабақ нешеде басталады?,schedule,schedule,True
+4,Маған осы деңгейді өтуге қанша уақыт кетеді?,course_duration,course_duration,True
+5,"Сәлеметсіз бе, курсқа қабылдану үшін қайда өтінім беремін?",registration,registration,True
+6,"Айтып жібересіз бе, төлем жасау үшін қандай деректер керек?",payment,payment,True
+7,Оқу орны қай көшеде орналасқан?,location,location,True
+8,"Айтып жібересіз бе, сабақ басталатын нақты уақыт қандай?",schedule,schedule,True
+9,"Көмектесіңізші, сайт жұмыс істемей жатыр.",technical_problem,technical_problem,True
+10,Маған сертификат қанша уақытта дайын болады?,certificate,certificate,True
+11,Осы деңгейді өтуге қанша уақыт кетеді?,course_duration,course_duration,True
+12,"Сәлеметсіз бе, ай сайын бөлек төлеуге бола ма?",payment,payment,True
+13,"Сәлеметсіз бе, қосымшада сабаққа қосыла алмай отырмын.",technical_problem,location,False
+14,"Сәлеметсіз бе, жаңа топқа қалай жазыламын?",registration,registration,True
+15,"Айтып жібересіз бе, оқытушының аты-жөні кім?",teacher_information,teacher_information,True
+16,"Сәлеметсіз бе, курс қанша уақытқа созылады?",course_duration,course_duration,True
+17,"Айтып жібересіз бе, курсты жалғастырмасам, қалған ақшаны қайтарасыздар ма?",refund,refund,True
+18,Ақшаны қайтаруға бола ма?,refund,refund,True
+19,Мәселе бар: сайт жұмыс істемей жатыр.,technical_problem,technical_problem,True
+20,Білгім келеді: төлемді қайтарудан бас тартуы мүмкін бе?,refund,refund,True
+21,Білгім келеді: курс ақысын қалай аударамын?,payment,price,False
+22,Сабақ беретін маманның білімі қандай?,teacher_information,teacher_information,True
+23,Білгім келеді: ақшаны қайтару қанша күн алады?,refund,refund,True
+24,"Сәлеметсіз бе, мұғалімнің тәжірибесі қандай?",teacher_information,teacher_information,True
+25,"Айтып жібересіз бе, тіркелу үшін қандай мәліметтер керек?",registration,registration,True
+26,Білгім келеді: қандай төлем тәсілдері бар?,payment,payment,True
+27,"Айтып жібересіз бе, курстың оқытушысы кім?",teacher_information,teacher_information,True
+28,Маған оқу мерзімі қандай?,course_duration,course_duration,True
+29,Маған оқу соңында анықтама немесе сертификат аламын ба?,certificate,certificate,True
+30,"Сәлеметсіз бе, онлайн төлем қалай рәсімделеді?",payment,payment,True
+31,"Айтып жібересіз бе, курс қашан аяқталады?",course_duration,course_duration,True
+32,"Айтып жібересіз бе, сертификатта қандай ақпарат көрсетіледі?",certificate,certificate,True
+33,"Айтып жібересіз бе, демалыс күндері сабақ бар ма?",schedule,schedule,True
+34,Оқуға қалай жазылуға болады?,registration,registration,True
+35,Курстың жетекшісі кім?,teacher_information,teacher_information,True
+36,Білгім келеді: бұл курста сабақ беретін мамандар туралы ақпарат бар ма?,teacher_information,teacher_information,True
+37,"Сәлеметсіз бе, курсқа онлайн тіркелуге бола ма?",registration,registration,True
+38,"Айтып жібересіз бе, сабақ уақыты өзгеруі мүмкін бе?",schedule,schedule,True
+39,Маған онлайн төлем қалай рәсімделеді?,payment,payment,True
+40,"Айтып жібересіз бе, оқу кестесін алдын ала білуге бола ма?",schedule,price,False
+41,"Айтып жібересіз бе, бұл курста сабақ беретін мамандар туралы ақпарат бар ма?",teacher_information,teacher_information,True
+42,Білгім келеді: курсқа қалай тіркелемін?,registration,registration,True
+43,Білгім келеді: төлем сілтемесін жібере аласыз ба?,payment,price,False
+44,Тіркелуді қазір жасауға бола ма?,registration,payment,False
+45,"Көмектесіңізші, жеке кабинет ашылмай тұр.",technical_problem,technical_problem,True
+46,"Сәлеметсіз бе, оқуды аяқтағаннан кейін құжат аламын ба?",certificate,certificate,True
+47,"Сәлеметсіз бе, сертификатта қандай ақпарат көрсетіледі?",certificate,certificate,True
+48,"Сәлеметсіз бе, сабаққа төленетін ақы қанша?",price,price,True
+49,Маған өтінім жіберу жолын айтып бересіз бе?,registration,registration,True
+50,Білгім келеді: курсқа қабылдану үшін қайда өтінім беремін?,registration,registration,True
+51,Маған жұмыс күндері сабақ бар ма?,schedule,schedule,True
+52,Жаңа топқа қалай жазыламын?,registration,registration,True
+53,Маған карта арқылы төлем қабылдайсыздар ма?,payment,payment,True
+54,"Сәлеметсіз бе, құпиясөзімді енгізсем де кірмейді.",technical_problem,technical_problem,True
+55,Не істеуге болады? Жеке кабинет ашылмай тұр.,technical_problem,technical_problem,True
+56,Маған мұғалімнің тәжірибесі қандай?,teacher_information,teacher_information,True
+57,Білгім келеді: сабақ өтетін ғимарат қай жерде?,location,location,True
+58,Білгім келеді: нақты мекенжайды айта аласыз ба?,location,location,True
+59,Маған сабақ қай күндері және нешеде өтеді?,schedule,schedule,True
+60,Маған бағдарлама неше ай жүреді?,course_duration,course_duration,True
+61,"Сәлеметсіз бе, бағдарлама неше ай жүреді?",course_duration,registration,False
+62,"Сәлеметсіз бе, осы курстың бағасын білгім келеді.",price,price,True
+63,"Айтып жібересіз бе, курсқа қатысуға қалай өтініш беремін?",registration,registration,True
+64,Курсқа орын брондау қалай жүреді?,registration,registration,True
+65,Не істеуге болады? Платформада қате шығып тұр.,technical_problem,technical_problem,True
+66,"Сәлеметсіз бе, төленген соманы қайтару мүмкін бе?",refund,refund,True
+67,Маған курс ақысын қалай аударамын?,payment,price,False
+68,Маған оқу үшін айына қанша төлеу керек?,price,price,True
+69,Білгім келеді: бағдарлама ұзақтығын айта аласыз ба?,course_duration,price,False
+70,Білгім келеді: қайтарым сомасы толық бола ма?,refund,refund,True
+71,"Сәлеметсіз бе, толық оқу кезеңі қанша тұрады?",price,price,True
+72,Маған қорытынды сертификат беріледі ме?,certificate,certificate,True
+73,Маған сіздерге бару үшін қай жерге келемін?,location,location,True
+74,Маған ақшаны қайтару қанша күн алады?,refund,refund,True
+75,"Айтып жібересіз бе, курсқа жазылу үшін не істеу керек?",registration,registration,True
+76,Білгім келеді: орталыққа қалай баруға болады?,location,registration,False
+77,Маған ақша қайтару ережесі бар ма?,refund,refund,True
+78,Мәселе бар: сабақ видеосы ашылмайды.,technical_problem,technical_problem,True
+79,Курсты қандай маман өткізеді?,teacher_information,teacher_information,True
+80,Маған курс қанша теңге болады?,price,course_duration,False
+81,Маған оқу қанша семестр жүреді?,course_duration,price,False
+82,"Айтып жібересіз бе, курс біткенде куәлік бересіздер ме?",certificate,certificate,True
+83,Маған қайтару шарттарын түсіндіріп бересіз бе?,refund,refund,True
+84,"Сәлеметсіз бе, оқу орталығының адресін жібере аласыз ба?",location,location,True
+85,"Айтып жібересіз бе, қолма-қол төлем қабылдана ма?",payment,payment,True
+86,Білгім келеді: ақысын қандай жолмен төлеген дұрыс?,payment,payment,True
+87,"Айтып жібересіз бе, сертификатты кімдер алады?",certificate,certificate,True
+88,Білгім келеді: оқу орталығының адресін жібере аласыз ба?,location,location,True
+89,"Сәлеметсіз бе, оқу құны туралы ақпарат керек.",price,price,True
+90,Маған оқу құны туралы ақпарат керек.,price,price,True
+91,Маған курсқа қалай тіркелемін?,registration,registration,True
+92,"Сәлеметсіз бе, бұл бағдарламаның құны қандай?",price,price,True
+93,"Айтып жібересіз бе, сертификатты онлайн алуға бола ма?",certificate,certificate,True
+94,Мәселе бар: құпиясөзді қалпына келтіру хаты келмеді.,technical_problem,technical_problem,True
+95,"Айтып жібересіз бе, төлемді кері алу жолын айтып беріңізші.",refund,refund,True
+96,Білгім келеді: жұмыс күндері сабақ бар ма?,schedule,teacher_information,False
+97,"Сәлеметсіз бе, курс қанша теңге болады?",price,course_duration,False
+98,Маған төлем реквизиттерін қайдан аламын?,payment,payment,True
+99,Білгім келеді: онлайн төлеуге мүмкіндік бар ма?,payment,payment,True
+100,Курс басталғаннан кейін қанша уақыт оқимыз?,course_duration,course_duration,True
+101,"Сәлеметсіз бе, бөліп төлеуге бола ма?",payment,payment,True
+102,"Айтып жібересіз бе, оқу аяқталғанын растайтын құжат беріле ме?",certificate,certificate,True
+103,Білгім келеді: ақша қайтару үшін не істеу керек?,refund,refund,True
+104,Маған курс қанша уақытқа созылады?,course_duration,course_duration,True
+105,"Айтып жібересіз бе, сертификатты қайдан аламын?",certificate,certificate,True
+106,Білгім келеді: тренер туралы қысқаша ақпарат бар ма?,teacher_information,teacher_information,True
+107,Мәселе бар: аккаунтым бұғатталып қалған сияқты.,technical_problem,technical_problem,True
+108,"Сәлеметсіз бе, жұмыс күндері сабақ бар ма?",schedule,schedule,True
+109,"Айтып жібересіз бе, электронды сертификат бар ма?",certificate,certificate,True
+110,Қай мекенжайға баруым керек?,location,location,True
+111,"Айтып жібересіз бе, курс қанша теңге болады?",price,course_duration,False
+112,"Сәлеметсіз бе, тіркелуді қазір жасауға бола ма?",registration,payment,False
+113,"Сәлеметсіз бе, төлем сілтемесін жібере аласыз ба?",payment,payment,True
+114,Филиалдың мекенжайы қандай?,location,location,True
+115,Платформада қате шығып тұр.,technical_problem,technical_problem,True
+116,Курс соңында сертификат беріле ме?,certificate,certificate,True
+117,Білгім келеді: бір сабақтың бағасы қанша?,price,price,True
+118,"Курсты жалғастырмасам, қалған ақшаны қайтарасыздар ма?",refund,refund,True
+119,Білгім келеді: сабақтардың жалпы құны қанша?,price,price,True
+120,Оқу ақысын қайда төлеймін?,payment,price,False
+121,Ақша қайтару ережесі бар ма?,refund,refund,True
+122,Маған ақшаны қайтаруға бола ма?,refund,refund,True
+123,Маған оқу орталығының адресін жібере аласыз ба?,location,location,True
+124,"Маған курс ұнамаса, ақшамды қайтара аламын ба?",refund,refund,True
+125,Білгім келеді: сертификат алу үшін қандай талап бар?,certificate,registration,False
+126,Сабақ қай күндері және нешеде өтеді?,schedule,schedule,True
+127,Толық курс неше айға есептелген?,course_duration,course_duration,True
+128,"Маған сабақтар таңертең бе, кешке ме?",schedule,schedule,True
+129,"Сәлеметсіз бе, электронды сертификат бар ма?",certificate,certificate,True
+130,"Сәлеметсіз бе, курсқа қатысқандардың бәріне сертификат беріле ме?",certificate,certificate,True
+131,"Сәлеметсіз бе, орталыққа жақын қандай нысан бар?",location,location,True
+132,Төлемді қайтарудан бас тартуы мүмкін бе?,refund,refund,True
+133,Маған топтардың сабақ уақыты бірдей ме?,schedule,schedule,True
+134,Курсқа төлемді алдын ала жасау керек пе?,payment,payment,True
+135,"Сәлеметсіз бе, сабақты кім жүргізеді?",teacher_information,teacher_information,True
+136,"Көмектесіңізші, кіру кезінде қате хабарламасы шығады.",technical_problem,technical_problem,True
+137,Оқу үшін айына қанша төлеу керек?,price,price,True
+138,"Сәлеметсіз бе, ақша қайтару ережесі бар ма?",refund,refund,True
+139,Не істеуге болады? Қосымшада сабаққа қосыла алмай отырмын.,technical_problem,technical_problem,True
+140,Білгім келеді: демалыс күндері сабақ бар ма?,schedule,teacher_information,False
+141,"Сәлеметсіз бе, курсқа жазылу ашық па?",registration,registration,True
+142,Оқу мерзімі қандай?,course_duration,course_duration,True
+143,"Айтып жібересіз бе, толық курс неше айға есептелген?",course_duration,course_duration,True
+144,Құпиясөзімді енгізсем де кірмейді.,technical_problem,technical_problem,True
+145,Маған оқу кестесін алдын ала білуге бола ма?,schedule,teacher_information,False
+146,Білгім келеді: онлайн төлем қалай рәсімделеді?,payment,registration,False
+147,Сертификатты кімдер алады?,certificate,certificate,True
+148,Білгім келеді: курсқа орын брондау қалай жүреді?,registration,registration,True
+149,"Сәлеметсіз бе, қай ауданға орналасқансыздар?",location,location,True
+150,"Сәлеметсіз бе, локацияны жібересіз бе?",location,refund,False
+151,Маған оқу кезеңі қанша уақыт?,course_duration,course_duration,True
+152,Білгім келеді: тіркелу қай жерден жасалады?,registration,registration,True
+153,"Сәлеметсіз бе, курсқа қатысуға қалай өтініш беремін?",registration,registration,True
+154,"Айтып жібересіз бе, тренер туралы қысқаша ақпарат бар ма?",teacher_information,price,False
+155,"Айтып жібересіз бе, тренердің тәжірибесін қайдан көруге болады?",teacher_information,payment,False
+156,Білгім келеді: бір деңгей қанша уақытқа созылады?,course_duration,course_duration,True
+157,Маған сабақты кім жүргізеді?,teacher_information,teacher_information,True
+158,"Сәлеметсіз бе, карта арқылы төлем қабылдайсыздар ма?",payment,payment,True
+159,"Сәлеметсіз бе, курстың толық бағасын айта аласыз ба?",price,price,True
+160,"Көмектесіңізші, жүйеге кіре алмай жатырмын.",technical_problem,technical_problem,True
+161,Маған қатысушы ретінде қалай тіркелуге болады?,registration,registration,True
+162,"Сәлеметсіз бе, қандай төлем тәсілдері бар?",payment,payment,True
+163,Маған сертификат алу үшін емтихан тапсыру керек пе?,certificate,certificate,True
+164,"Сәлеметсіз бе, орталық қай жерде орналасқан?",location,location,True
+165,Сабақ болатын жердің геолокациясын жіберіңізші.,location,location,True
+166,"Сәлеметсіз бе, ақысын қандай жолмен төлеген дұрыс?",payment,payment,True
+167,"Сәлеметсіз бе, курстың жетекшісі кім?",teacher_information,teacher_information,True
+168,"Айтып жібересіз бе, курсқа қосылу үшін форманы қайдан толтырамын?",registration,registration,True
+169,"Айтып жібересіз бе, тіркелуді қазір жасауға бола ма?",registration,payment,False
+170,Білгім келеді: курс қай күндері болады?,schedule,teacher_information,False
+171,"Көмектесіңізші, код келмей жатыр, жүйеге кіре алмаймын.",technical_problem,technical_problem,True
+172,"Сәлеметсіз бе, сабақ өтетін ғимарат қай жерде?",location,location,True
+173,Маған тренер туралы қысқаша ақпарат бар ма?,teacher_information,certificate,False
+174,Маған курс өтетін орын қайда?,location,location,True
+175,"Сабақтар таңертең бе, кешке ме?",schedule,schedule,True
+176,Маған төлем сілтемесін жібере аласыз ба?,payment,payment,True
+177,Карта арқылы төлем қабылдайсыздар ма?,payment,payment,True
+178,Маған офистің орналасқан жерін көрсетесіз бе?,location,location,True
+179,"Сәлеметсіз бе, қай жағдайда төлем қайтарылады?",refund,refund,True
+180,Маған төлемді қалай жасауға болады?,payment,payment,True
+181,Маған оқытушының портфолиосын көруге бола ма?,teacher_information,teacher_information,True
+182,"Сәлеметсіз бе, демалыс күндері сабақ бар ма?",schedule,schedule,True
+183,Білгім келеді: офистің орналасқан жерін көрсетесіз бе?,location,location,True
+184,"Айтып жібересіз бе, орталыққа қалай баруға болады?",location,registration,False
+185,Маған электронды сертификат бар ма?,certificate,certificate,True
+186,Мәселе бар: қосымшада сабаққа қосыла алмай отырмын.,technical_problem,technical_problem,True
+187,Маған бір айлық оқу бағасы қанша?,price,price,True
+188,"Көмектесіңізші, платформада қате шығып тұр.",technical_problem,technical_problem,True
+189,"Айтып жібересіз бе, карта арқылы төлем қабылдайсыздар ма?",payment,payment,True
+190,Маған оқытушының сертификаттары бар ма?,teacher_information,certificate,False
+191,"Сәлеметсіз бе, апталық сабақ кестесі қалай құрылған?",schedule,schedule,True
+192,Білгім келеді: өтінім жіберу жолын айтып бересіз бе?,registration,registration,True
+193,Қай уақытта келу керек?,schedule,location,False
+194,Маған бағдарлама қанша күнге созылады?,course_duration,course_duration,True
+195,"Айтып жібересіз бе, сабақ беретін маманның білімі қандай?",teacher_information,teacher_information,True
+196,Маған тіркелуді қазір жасауға бола ма?,registration,payment,False
+197,Білгім келеді: сабақ жүргізетін ұстазбен алдын ала танысуға бола ма?,teacher_information,teacher_information,True
+198,"Көмектесіңізші, қосымшада сабаққа қосыла алмай отырмын.",technical_problem,technical_problem,True
+199,"Айтып жібересіз бе, сабақ қай жерде өтеді?",location,location,True
+200,Білгім келеді: сабақ қай жерде өтеді?,location,location,True
+201,Маған онлайн төлеуге мүмкіндік бар ма?,payment,payment,True
+202,Кешкі топтың кестесі қандай?,schedule,schedule,True
+203,Бағдарлама соңында ресми құжат беріле ме?,certificate,certificate,True
+204,"Айтып жібересіз бе, оқу мерзімі алдын ала белгіленген бе?",course_duration,course_duration,True
+205,"Айтып жібересіз бе, курс ақысын қалай аударамын?",payment,price,False
+206,Жүйе мені аккаунттан шығарып жібереді.,technical_problem,technical_problem,True
+207,Маған курсқа қосылу үшін форманы қайдан толтырамын?,registration,registration,True
+208,"Сәлеметсіз бе, ғимараттың адресін қайдан көремін?",location,location,True
+209,Білгім келеді: қайтарымға өтінішті қайда беремін?,refund,teacher_information,False
+210,Білгім келеді: ай сайын бөлек төлеуге бола ма?,payment,payment,True
+211,Онлайн төлеуге мүмкіндік бар ма?,payment,payment,True
+212,Маған сертификатта қандай ақпарат көрсетіледі?,certificate,certificate,True
+213,Не істеуге болады? Сайттағы батырма жұмыс істемейді.,technical_problem,technical_problem,True
+214,"Айтып жібересіз бе, ақшаны қайтаруға бола ма?",refund,refund,True
+215,"Сәлеметсіз бе, бағдарлама соңында ресми құжат беріле ме?",certificate,certificate,True
+216,Маған курс біткенде куәлік бересіздер ме?,certificate,certificate,True
+217,Курсты толық аяқтауға қанша уақыт керек?,course_duration,course_duration,True
+218,Білгім келеді: мұғалімнің тәжірибесі қандай?,teacher_information,teacher_information,True
+219,Білгім келеді: ақшаны қайтаруға бола ма?,refund,refund,True
+220,Маған бағдарлама ақысы қанша?,price,price,True
+221,Білгім келеді: кестеде қандай уақыттар бар?,schedule,teacher_information,False
+222,"Айтып жібересіз бе, осы курстың бағасын білгім келеді.",price,price,True
+223,Білгім келеді: курсқа жазылу үшін не істеу керек?,registration,registration,True
+224,"Айтып жібересіз бе, қай уақытта келу керек?",schedule,location,False
+225,"Айтып жібересіз бе, сабақтар таңертең бе, кешке ме?",schedule,schedule,True
+226,Бір сабақтың бағасы қанша?,price,price,True
+227,"Айтып жібересіз бе, қай мекенжайға баруым керек?",location,location,True
+228,"Сәлеметсіз бе, сертификатты онлайн алуға бола ма?",certificate,certificate,True
+229,"Көмектесіңізші, жеке кабинетте курс көрінбей тұр.",technical_problem,technical_problem,True
+230,Сертификатты қайдан аламын?,certificate,certificate,True
+231,"Сәлеметсіз бе, құпиясөзді қалпына келтіру хаты келмеді.",technical_problem,refund,False
+232,"Айтып жібересіз бе, қайтарымға өтінішті қайда беремін?",refund,location,False
+233,"Айтып жібересіз бе, сіздердің кеңселеріңіз қайда?",location,location,True
+234,Маған мұғалімнің осы салада тәжірибесі бар ма?,teacher_information,teacher_information,True
+235,Білгім келеді: курстың нақты құнын қайдан көремін?,price,price,True
+236,Білгім келеді: сабақ қай күндері және нешеде өтеді?,schedule,schedule,True
+237,Сабақ басталатын нақты уақыт қандай?,schedule,schedule,True
+238,Маған локацияны жібересіз бе?,location,certificate,False
+239,"Сәлеметсіз бе, қорытынды сертификат беріледі ме?",certificate,certificate,True
+240,Жүйеге кіре алмай жатырмын.,technical_problem,technical_problem,True
+241,"Сәлеметсіз бе, оқытушының аты-жөні кім?",teacher_information,teacher_information,True
+242,"Айтып жібересіз бе, тіркелу қай жерден жасалады?",registration,registration,True
+243,Білгім келеді: сабақтың күндері мен уақытын айта аласыз ба?,schedule,teacher_information,False
+244,"Сәлеметсіз бе, курсты толық аяқтауға қанша уақыт керек?",course_duration,course_duration,True
+245,Білгім келеді: курс қашан аяқталады?,course_duration,course_duration,True
+246,"Айтып жібересіз бе, курс басталғаннан кейін қанша уақыт оқимыз?",course_duration,course_duration,True
+247,"Сәлеметсіз бе, төлемді басқа адам жасай ала ма?",payment,payment,True
+248,Білгім келеді: төлемді кері аудару қалай жасалады?,refund,refund,True
+249,"Сәлеметсіз бе, бір сабақтың бағасы қанша?",price,price,True
+250,Білгім келеді: сабақ беретін адамның мамандығы қандай?,teacher_information,teacher_information,True
+251,Маған төлемді басқа адам жасай ала ма?,payment,payment,True
+252,"Айтып жібересіз бе, төлемді қалай қайтарып алуға болады?",refund,refund,True
+253,"Сәлеметсіз бе, курс ұнамаса, ақшамды қайтара аламын ба?",refund,refund,True
+254,"Айтып жібересіз бе, курсқа қалай тіркелемін?",registration,registration,True
+255,"Айтып жібересіз бе, сертификат қанша уақытта дайын болады?",certificate,certificate,True
+256,Бір айлық оқу бағасы қанша?,price,price,True
+257,Маған курс қанша апта болады?,course_duration,course_duration,True
+258,Маған жазылу үшін қандай қадамдар бар?,registration,registration,True
+259,Өтінім жіберу жолын айтып бересіз бе?,registration,registration,True
+260,Кестеде қандай уақыттар бар?,schedule,schedule,True
+261,Маған тіркелу қай жерден жасалады?,registration,registration,True
+262,Курстың оқытушысы кім?,teacher_information,teacher_information,True
+263,"Айтып жібересіз бе, сабақ жүргізетін ұстазбен алдын ала танысуға бола ма?",teacher_information,teacher_information,True
+264,Білгім келеді: төлемді кері алу жолын айтып беріңізші.,refund,refund,True
+265,"Айтып жібересіз бе, онлайн төлеуге мүмкіндік бар ма?",payment,payment,True
+266,"Мәселе бар: код келмей жатыр, жүйеге кіре алмаймын.",technical_problem,technical_problem,True
+267,Онлайн төлем қалай рәсімделеді?,payment,payment,True
+268,Маған бағдарлама қысқа мерзімді ме?,course_duration,certificate,False
+269,Білгім келеді: курсқа төлемді алдын ала жасау керек пе?,payment,registration,False
+270,Сабақтың күндері мен уақытын айта аласыз ба?,schedule,location,False
+271,Мәселе бар: жеке кабинет ашылмай тұр.,technical_problem,technical_problem,True
+272,Ақша қайтару үшін не істеу керек?,refund,refund,True
+273,Не істеуге болады? Аккаунтыма кіре алмаймын.,technical_problem,technical_problem,True
+274,Ғимараттың адресін қайдан көремін?,location,location,True
+275,Білгім келеді: курстың толық бағасын айта аласыз ба?,price,price,True
+276,Маған оқу ақысын қайда төлеймін?,payment,price,False
+277,Маған курсқа орын брондау қалай жүреді?,registration,registration,True
+278,"Айтып жібересіз бе, кешкі топтың кестесі қандай?",schedule,schedule,True
+279,"Сәлеметсіз бе, сабақ қай күндері және нешеде өтеді?",schedule,schedule,True
+280,Сертификат алу үшін емтихан тапсыру керек пе?,certificate,certificate,True
+281,"Маған курс бір ай ма, әлде ұзағырақ па?",course_duration,certificate,False
+282,"Көмектесіңізші, төлем беті ашылмай қалды.",technical_problem,technical_problem,True
+283,Төленген соманы қайтару мүмкін бе?,refund,refund,True
+284,Білгім келеді: ақша қайтару ережесі бар ма?,refund,refund,True
+285,Маған kaspi арқылы төлеуге бола ма?,payment,payment,True
+286,Білгім келеді: қорытынды сертификат беріледі ме?,certificate,certificate,True
+287,"Сәлеметсіз бе, тіркелу тәртібі қандай?",registration,registration,True
+288,"Сәлеметсіз бе, өтінім жіберу жолын айтып бересіз бе?",registration,registration,True
+289,"Айтып жібересіз бе, төленген соманы қайтару мүмкін бе?",refund,refund,True
+290,"Сәлеметсіз бе, бағдарлама қанша күнге созылады?",course_duration,course_duration,True
+291,"Сәлеметсіз бе, курстың жалпы ұзақтығы қандай?",course_duration,course_duration,True
+292,Маған оқытушының біліктілігі туралы білгім келеді.,teacher_information,teacher_information,True
+293,"Айтып жібересіз бе, қай ауданға орналасқансыздар?",location,location,True
+294,Білгім келеді: бағаға қандай қызметтер кіреді?,price,price,True
+295,"Айтып жібересіз бе, мұғалімнің жұмыс тәжірибесі неше жыл?",teacher_information,teacher_information,True
+296,Білгім келеді: қай ауданға орналасқансыздар?,location,location,True
+297,"Айтып жібересіз бе, сабақ болатын жердің геолокациясын жіберіңізші.",location,location,True
+298,Білгім келеді: қатысушы ретінде қалай тіркелуге болады?,registration,registration,True
+299,"Сәлеметсіз бе, оқу орны қай көшеде орналасқан?",location,location,True
+300,Курсқа өтінімді қалай беремін?,registration,registration,True
+301,"Айтып жібересіз бе, оқытушының біліктілігі туралы білгім келеді.",teacher_information,teacher_information,True
+302,Төлемді қалай қайтарып алуға болады?,refund,refund,True
+303,"Айтып жібересіз бе, төлемді кері аудару қалай жасалады?",refund,refund,True
+304,Оқу аяқталғанын растайтын құжат беріле ме?,certificate,certificate,True
+305,Сабақ видеосы ашылмайды.,technical_problem,technical_problem,True
+306,"Сәлеметсіз бе, төлемді қайтарудан бас тартуы мүмкін бе?",refund,refund,True
+307,Маған сабақ беретін адамның мамандығы қандай?,teacher_information,teacher_information,True
+308,Маған курстың толық бағасын айта аласыз ба?,price,price,True
+309,"Айтып жібересіз бе, kaspi арқылы төлеуге бола ма?",payment,payment,True
+310,"Сәлеметсіз бе, онлайн төлеуге мүмкіндік бар ма?",payment,payment,True
+311,Маған сабақты тұрақты бір оқытушы жүргізе ме?,teacher_information,teacher_information,True
+312,Нақты мекенжайды айта аласыз ба?,location,location,True
+313,"Сәлеметсіз бе, сабақ қай уақытта өтеді?",schedule,schedule,True
+314,Маған бір сабақтың бағасы қанша?,price,price,True
+315,"Сәлеметсіз бе, төлемді қалай жасауға болады?",payment,payment,True
+316,Білгім келеді: толық курс неше айға есептелген?,course_duration,course_duration,True
+317,"Айтып жібересіз бе, сабақ өтетін ғимарат қай жерде?",location,location,True
+318,Маған оқытушылар ауысып тұра ма?,teacher_information,certificate,False
+319,"Техникалық қате пайда болды, не істеймін?",technical_problem,technical_problem,True
+320,"Айтып жібересіз бе, курстың нақты құнын қайдан көремін?",price,price,True
+321,"Сәлеметсіз бе, курсқа орын брондау қалай жүреді?",registration,registration,True
+322,Сабақтар неше айға жоспарланған?,course_duration,schedule,False
+323,"Айтып жібересіз бе, ақша қайтару ережесі бар ма?",refund,refund,True
+324,"Айтып жібересіз бе, сіздерге бару үшін қай жерге келемін?",location,location,True
+325,Төлемнің бір бөлігін қайтаруға бола ма?,refund,refund,True
+326,"Айтып жібересіз бе, филиалдың мекенжайы қандай?",location,location,True
+327,Сабақ қай уақытта өтеді?,schedule,schedule,True
+328,"Айтып жібересіз бе, курсқа онлайн тіркелуге бола ма?",registration,registration,True
+329,Қазіргі тариф қандай?,price,teacher_information,False
+330,"Сәлеметсіз бе, курсқа төлемді алдын ала жасау керек пе?",payment,payment,True
+331,"Сәлеметсіз бе, бір деңгей қанша уақытқа созылады?",course_duration,course_duration,True
+332,Білгім келеді: тіркелуді қазір жасауға бола ма?,registration,registration,True
+333,"Білгім келеді: оқу бағдарламасына тіркелгім келеді, қалай бастаймын?",registration,registration,True
+334,Білгім келеді: курс қанша теңге болады?,price,price,True
+335,Білгім келеді: сертификатты қайдан аламын?,certificate,price,False
+336,"Айтып жібересіз бе, қайтарым жасау тәртібі қандай?",refund,refund,True
+337,Білгім келеді: бір айлық оқу бағасы қанша?,price,price,True
+338,Маған қайтарым үшін қандай құжат керек?,refund,refund,True
+339,Орталық қай жерде орналасқан?,location,location,True
+340,Мекенжайларыңыз қандай?,location,location,True
+341,"Сәлеметсіз бе, жүйеге кіре алмай жатырмын.",technical_problem,technical_problem,True
+342,Маған сертификат алу үшін қандай талап бар?,certificate,certificate,True
+343,"Айтып жібересіз бе, оқу қанша семестр жүреді?",course_duration,price,False
+344,"Сәлеметсіз бе, жеке кабинет ашылмай тұр.",technical_problem,technical_problem,True
+345,"Айтып жібересіз бе, оқу соңында анықтама немесе сертификат аламын ба?",certificate,certificate,True
+346,Маған сабақ болатын жердің геолокациясын жіберіңізші.,location,location,True
+347,"Айтып жібересіз бе, мекенжайларыңыз қандай?",location,location,True
+348,Маған қай мекенжайға баруым керек?,location,location,True
+349,Білгім келеді: мекенжайларыңыз қандай?,location,teacher_information,False
+350,Не істеуге болады? Сабақ видеосы ашылмайды.,technical_problem,technical_problem,True
+351,Курсқа онлайн тіркелуге бола ма?,registration,registration,True
+352,"Сәлеметсіз бе, курсқа жазылу үшін не істеу керек?",registration,registration,True
+353,Сайт жұмыс істемей жатыр.,technical_problem,technical_problem,True
+354,Курсқа жазылу ашық па?,registration,registration,True
+355,Білгім келеді: курсқа қатысуға қалай өтініш беремін?,registration,registration,True
+356,Мұғалімнің тәжірибесі қандай?,teacher_information,teacher_information,True
+357,"Сәлеметсіз бе, курсты жалғастырмасам, қалған ақшаны қайтарасыздар ма?",refund,refund,True
+358,Бөліп төлеуге бола ма?,payment,payment,True
+359,"Сәлеметсіз бе, курс қай күндері болады?",schedule,payment,False
+360,Білгім келеді: төлемнің бір бөлігін қайтаруға бола ма?,refund,refund,True
+361,"Айтып жібересіз бе, қандай төлем тәсілдері бар?",payment,payment,True
+362,"Айтып жібересіз бе, қайтарым сомасы толық бола ма?",refund,refund,True
+363,Білгім келеді: оқу қанша семестр жүреді?,course_duration,price,False
+364,"Айтып жібересіз бе, сабақ кестесі қандай?",schedule,schedule,True
+365,"Көмектесіңізші, аккаунтым бұғатталып қалған сияқты.",technical_problem,technical_problem,True
+366,Білгім келеді: карта арқылы төлем қабылдайсыздар ма?,payment,payment,True
+367,"Айтып жібересіз бе, қатысу ақысы қанша екенін айта аласыз ба?",price,price,True
+368,Маған толық курс неше айға есептелген?,course_duration,course_duration,True
+369,Білгім келеді: банк картасымен төлей аламын ба?,payment,payment,True
+370,"Сәлеметсіз бе, курс ақысын қалай аударамын?",payment,price,False
+371,Білгім келеді: сертификат қанша уақытта дайын болады?,certificate,certificate,True
+372,Білгім келеді: курсқа онлайн тіркелуге бола ма?,registration,registration,True
+373,"Сәлеметсіз бе, толық курс неше айға есептелген?",course_duration,course_duration,True
+374,Маған келесі сабақ қашан болады?,schedule,schedule,True
+375,"Сәлеметсіз бе, сертификатты қайдан аламын?",certificate,certificate,True
+376,Курс қанша теңге болады?,price,course_duration,False
+377,Білгім келеді: оқытушының портфолиосын көруге бола ма?,teacher_information,teacher_information,True
+378,"Айтып жібересіз бе, орталық қай жерде орналасқан?",location,location,True
+379,Білгім келеді: кешкі топтың кестесі қандай?,schedule,teacher_information,False
+380,"Сәлеметсіз бе, курс біткенде куәлік бересіздер ме?",certificate,certificate,True
+381,"Сәлеметсіз бе, курс басталғаннан кейін қанша уақыт оқимыз?",course_duration,course_duration,True
+382,Маған кестеде қандай уақыттар бар?,schedule,schedule,True
+383,"Айтып жібересіз бе, оқу үшін айына қанша төлеу керек?",price,price,True
+384,Қандай төлем тәсілдері бар?,payment,payment,True
+385,Білгім келеді: курстың оқытушысы кім?,teacher_information,teacher_information,True
+386,"Сәлеметсіз бе, оқу кезеңі қанша уақыт?",course_duration,course_duration,True
+387,"Айтып жібересіз бе, курстан бас тартсам, ақшам қайтарыла ма?",refund,refund,True
+388,"Сәлеметсіз бе, оқу қанша семестр жүреді?",course_duration,price,False
+389,"Айтып жібересіз бе, келесі сабақ қашан болады?",schedule,schedule,True
+390,Қайтарым жасау тәртібі қандай?,refund,refund,True
+391,"Сәлеметсіз бе, жеке кабинетте курс көрінбей тұр.",technical_problem,technical_problem,True
+392,"Оқу бағдарламасына тіркелгім келеді, қалай бастаймын?",registration,registration,True
+393,"Сәлеметсіз бе, оқу ұзақтығы қанша?",course_duration,course_duration,True
+394,"Сәлеметсіз бе, сабақ нешеде басталады?",schedule,schedule,True
+395,Маған курсқа жазылу үшін не істеу керек?,registration,registration,True
+396,Маған курстың жетекшісі кім?,teacher_information,teacher_information,True
+397,Маған төлем жасау үшін қандай деректер керек?,payment,payment,True
+398,"Сәлеметсіз бе, бағдарлама қысқа мерзімді ме?",course_duration,certificate,False
+399,"Сәлеметсіз бе, оқытушы туралы ақпарат бере аласыз ба?",teacher_information,teacher_information,True
+400,"Білгім келеді: курс бір ай ма, әлде ұзағырақ па?",course_duration,teacher_information,False
+401,Білгім келеді: апталық сабақ кестесі қалай құрылған?,schedule,schedule,True
+402,Білгім келеді: филиалдың мекенжайы қандай?,location,location,True
+403,Білгім келеді: курсқа қатысу қанша теңге тұрады?,price,price,True
+404,Курсқа қатысу қанша теңге тұрады?,price,price,True
+405,"Сәлеметсіз бе, сертификат алу үшін қандай талап бар?",certificate,certificate,True
+406,Білгім келеді: курсқа өтінімді қалай беремін?,registration,registration,True
+407,"Көмектесіңізші, жүйе мені аккаунттан шығарып жібереді.",technical_problem,technical_problem,True
+408,"Сәлеметсіз бе, тіркелу қай жерден жасалады?",registration,registration,True
+409,Маған бұл курста сабақ беретін мамандар туралы ақпарат бар ма?,teacher_information,teacher_information,True
+410,"Сәлеметсіз бе, қазіргі тариф қандай?",price,price,True
+411,"Айтып жібересіз бе, төлемді қайтарудан бас тартуы мүмкін бе?",refund,refund,True
+412,"Айтып жібересіз бе, сіздер қалада қай жерде отырсыздар?",location,location,True
+413,Білгім келеді: қай уақытта келу керек?,schedule,location,False
+414,Орталыққа жақын қандай нысан бар?,location,location,True
+415,Маған сертификат қандай түрде беріледі?,certificate,certificate,True
+416,Маған тіркелу үшін қандай мәліметтер керек?,registration,registration,True
+417,Білгім келеді: оқытушының біліктілігі туралы білгім келеді.,teacher_information,teacher_information,True
+418,Оқытушылар ауысып тұра ма?,teacher_information,teacher_information,True
+419,Білгім келеді: локацияны жібересіз бе?,location,teacher_information,False
+420,"Айтып жібересіз бе, курсқа жазылу ашық па?",registration,registration,True
+421,"Айтып жібересіз бе, сабақтың күндері мен уақытын айта аласыз ба?",schedule,location,False
+422,Білгім келеді: осы бағдарламаға қалай қосыламын?,registration,registration,True
+423,Білгім келеді: төлем жасау үшін қандай деректер керек?,payment,payment,True
+424,"Айтып жібересіз бе, сабақты кім жүргізеді?",teacher_information,teacher_information,True
+425,"Сәлеметсіз бе, курстың бағасы қанша?",price,price,True
+426,Маған апталық сабақ кестесі қалай құрылған?,schedule,schedule,True
+427,Курс кестесін қайдан көруге болады?,schedule,schedule,True
+428,Сабақты кім жүргізеді?,teacher_information,teacher_information,True
+429,Білгім келеді: оқытушының аты-жөні кім?,teacher_information,teacher_information,True
+430,"Айтып жібересіз бе, курсқа қатысқандардың бәріне сертификат беріле ме?",certificate,certificate,True
+431,Қатысушы ретінде қалай тіркелуге болады?,registration,registration,True
+432,Білгім келеді: сертификат қандай түрде беріледі?,certificate,certificate,True
+433,Маған мұғалімнің жұмыс тәжірибесі неше жыл?,teacher_information,teacher_information,True
+434,Білгім келеді: сертификат жұмысқа жарай ма?,certificate,certificate,True
+435,"Сәлеметсіз бе, кіру кезінде қате хабарламасы шығады.",technical_problem,technical_problem,True
+436,Білгім келеді: қайтарым жасау тәртібі қандай?,refund,refund,True
+437,Білгім келеді: оқу кестесін алдын ала білуге бола ма?,schedule,teacher_information,False
+438,"Айтып жібересіз бе, qR арқылы төлеуге бола ма?",payment,payment,True
+439,Маған курсқа қатысуға қалай өтініш беремін?,registration,registration,True
+440,"Айтып жібересіз бе, сертификат жұмысқа жарай ма?",certificate,certificate,True
+441,"Айтып жібересіз бе, бұл бағдарламаның құны қандай?",price,price,True
+442,"Айтып жібересіз бе, мұғалімнің осы салада тәжірибесі бар ма?",teacher_information,teacher_information,True
+443,Ақшаны қайтару қанша күн алады?,refund,refund,True
+444,Білгім келеді: осы курстың бағасын білгім келеді.,price,teacher_information,False
+445,"Сәлеметсіз бе, қай мекенжайға баруым керек?",location,location,True
+446,"Сәлеметсіз бе, ақша қайтару үшін не істеу керек?",refund,refund,True
+447,"Білгім келеді: курс ұнамаса, ақшамды қайтара аламын ба?",refund,refund,True
+448,"Сәлеметсіз бе, жүйе мені аккаунттан шығарып жібереді.",technical_problem,technical_problem,True
+449,"Сәлеметсіз бе, курс кестесін қайдан көруге болады?",schedule,schedule,True
+450,Маған сабақ жүргізетін ұстазбен алдын ала танысуға бола ма?,teacher_information,teacher_information,True
+451,"Сәлеметсіз бе, аккаунтым бұғатталып қалған сияқты.",technical_problem,refund,False
+452,"Айтып жібересіз бе, төлемнің бір бөлігін қайтаруға бола ма?",refund,refund,True
+453,Kaspi арқылы төлеуге бола ма?,payment,payment,True
+454,Маған ақша қайтару үшін не істеу керек?,refund,refund,True
+455,"Сәлеметсіз бе, келесі сабақ қашан болады?",schedule,schedule,True
+456,"Сәлеметсіз бе, курстың нақты құнын қайдан көремін?",price,price,True
+457,Білгім келеді: келесі сабақ қашан болады?,schedule,schedule,True
+458,"Сәлеметсіз бе, курстан бас тартсам, ақшам қайтарыла ма?",refund,refund,True
+459,Мәселе бар: кіру кезінде қате хабарламасы шығады.,technical_problem,technical_problem,True
+460,"Сәлеметсіз бе, қайтарым сомасы толық бола ма?",refund,refund,True
+461,Сабақ жүргізетін ұстазбен алдын ала танысуға бола ма?,teacher_information,teacher_information,True
+462,Маған осы курстың бағасын білгім келеді.,price,price,True
+463,Білгім келеді: сабаққа төленетін ақы қанша?,price,price,True
+464,"Айтып жібересіз бе, ғимараттың адресін қайдан көремін?",location,location,True
+465,Маған курсқа қатысқандардың бәріне сертификат беріле ме?,certificate,certificate,True
+466,"Көмектесіңізші, қосымша жүктелмей жатыр.",technical_problem,technical_problem,True
+467,"Сәлеметсіз бе, қайтарым үшін қандай құжат керек?",refund,refund,True
+468,Курстың нақты құнын қайдан көремін?,price,price,True
+469,"Сәлеметсіз бе, логин дұрыс, бірақ жүйе қабылдамайды.",technical_problem,technical_problem,True
+470,Курстың толық бағасын айта аласыз ба?,price,price,True
+471,Сертификат алу үшін қандай талап бар?,certificate,certificate,True
+472,Маған орталыққа қалай баруға болады?,location,payment,False
+473,"Сәлеметсіз бе, ақшаны қайтаруға бола ма?",refund,refund,True
+474,Маған сабаққа төленетін ақы қанша?,price,price,True
+475,Аптасына неше рет сабақ өтеді?,schedule,schedule,True
+476,"Сәлеметсіз бе, сертификаттың үлгісін көруге бола ма?",certificate,certificate,True
+477,"Сәлеметсіз бе, бағдарлама ұзақтығын айта аласыз ба?",course_duration,location,False
+478,Білгім келеді: төлемді басқа адам жасай ала ма?,payment,payment,True
+479,"Айтып жібересіз бе, қайтару шарттарын түсіндіріп бересіз бе?",refund,refund,True
+480,"Сәлеметсіз бе, бір айлық оқу бағасы қанша?",price,price,True
+481,Маған курсты қандай маман өткізеді?,teacher_information,teacher_information,True
+482,"Айтып жібересіз бе, қайтарым үшін қандай құжат керек?",refund,refund,True
+483,"Сәлеметсіз бе, қатысушы ретінде қалай тіркелуге болады?",registration,registration,True
+484,Не істеуге болады? Жүйе мені аккаунттан шығарып жібереді.,technical_problem,technical_problem,True
+485,"Көмектесіңізші, құпиясөзді қалпына келтіру хаты келмеді.",technical_problem,technical_problem,True
+486,Білгім келеді: курсты қандай маман өткізеді?,teacher_information,teacher_information,True
+487,Білгім келеді: сертификатты кімдер алады?,certificate,teacher_information,False
+488,Білгім келеді: курстың жетекшісі кім?,teacher_information,teacher_information,True
+489,Білгім келеді: қолма-қол төлем қабылдана ма?,payment,payment,True
+490,Маған сабақтардың жалпы құны қанша?,price,price,True
+491,Не істеуге болады? Жеке кабинетте курс көрінбей тұр.,technical_problem,technical_problem,True
+492,Білгім келеді: бағдарлама неше ай жүреді?,course_duration,registration,False
+493,"Айтып жібересіз бе, курс соңында сертификат беріле ме?",certificate,certificate,True
+494,"Айтып жібересіз бе, курстың толық бағасын айта аласыз ба?",price,price,True
+495,Курс қашан аяқталады?,course_duration,course_duration,True
+496,Не істеуге болады? Аккаунтым бұғатталып қалған сияқты.,technical_problem,technical_problem,True
+497,"Сәлеметсіз бе, сертификат қанша уақытта дайын болады?",certificate,certificate,True
+498,"Курс ұнамаса, ақшамды қайтара аламын ба?",refund,refund,True
+499,"Не істеуге болады? Код келмей жатыр, жүйеге кіре алмаймын.",technical_problem,technical_problem,True
+500,Маған курс басталғаннан кейін қанша уақыт оқимыз?,course_duration,course_duration,True
+501,"Сәлеметсіз бе, сабақ жүргізетін ұстазбен алдын ала танысуға бола ма?",teacher_information,teacher_information,True
+502,Білгім келеді: курс қанша апта болады?,course_duration,price,False
+503,Білгім келеді: сабақты тұрақты бір оқытушы жүргізе ме?,teacher_information,teacher_information,True
+504,Білгім келеді: курсты толық аяқтауға қанша уақыт керек?,course_duration,course_duration,True
+505,Білгім келеді: мұғалімнің осы салада тәжірибесі бар ма?,teacher_information,teacher_information,True
+506,Білгім келеді: курс басталғаннан кейін қанша уақыт оқимыз?,course_duration,course_duration,True
+507,Тіркелу тәртібі қандай?,registration,registration,True
+508,"Айтып жібересіз бе, аптасына неше рет сабақ өтеді?",schedule,schedule,True
+509,"Сәлеметсіз бе, осы бағдарламаға қалай қосыламын?",registration,registration,True
+510,Қатысу ақысы қанша екенін айта аласыз ба?,price,price,True
+511,"Айтып жібересіз бе, курсқа төлемді алдын ала жасау керек пе?",payment,payment,True
+512,"Айтып жібересіз бе, оқу ақысын қайда төлеймін?",payment,price,False
+513,Маған сабақ қай жерде өтеді?,location,location,True
+514,Маған бағаға қандай қызметтер кіреді?,price,price,True
+515,Білгім келеді: курсқа қосылу үшін форманы қайдан толтырамын?,registration,registration,True
+516,Білгім келеді: қатысу ақысы қанша екенін айта аласыз ба?,price,price,True
+517,"Маған курсты жалғастырмасам, қалған ақшаны қайтарасыздар ма?",refund,refund,True
+518,Тренер туралы қысқаша ақпарат бар ма?,teacher_information,price,False
+519,"Сәлеметсіз бе, мұғалімнің жұмыс тәжірибесі неше жыл?",teacher_information,teacher_information,True
+520,Маған оқу ақысы қанша тұрады?,price,price,True
+521,Білгім келеді: оқу кезеңі қанша уақыт?,course_duration,course_duration,True
+522,Сертификатты онлайн алуға бола ма?,certificate,certificate,True
+523,Білгім келеді: бағдарлама ақысы қанша?,price,price,True
+524,"Айтып жібересіз бе, қорытынды сертификат беріледі ме?",certificate,certificate,True
+525,Құпиясөзді қалпына келтіру хаты келмеді.,technical_problem,refund,False
+526,Білгім келеді: оқу аяқталғанын растайтын құжат беріле ме?,certificate,certificate,True
+527,"Айтып жібересіз бе, сабақ қай уақытта өтеді?",schedule,schedule,True
+528,Мәселе бар: платформа өте баяу жұмыс істейді.,technical_problem,technical_problem,True
+529,Сабақ өтетін ғимарат қай жерде?,location,location,True
+530,"Сәлеметсіз бе, кестеде қандай уақыттар бар?",schedule,schedule,True
+531,Білгім келеді: курсқа жазылу ашық па?,registration,registration,True
+532,Оқу қанша семестр жүреді?,course_duration,price,False
+533,"Маған курс басталмай тұрып бас тартсам, төлемді қайтарасыздар ма?",refund,refund,True
+534,Сабақ беретін адамның мамандығы қандай?,teacher_information,teacher_information,True
+535,"Айтып жібересіз бе, курс қанша апта болады?",course_duration,course_duration,True
+536,Маған төлемді кері алу жолын айтып беріңізші.,refund,refund,True
+537,Маған курсқа қатысу қанша теңге тұрады?,price,price,True
+538,Қосымшада сабаққа қосыла алмай отырмын.,technical_problem,technical_problem,True
+539,Маған қай ауданға орналасқансыздар?,location,location,True
+540,"Айтып жібересіз бе, бағаға қандай қызметтер кіреді?",price,price,True
+541,"Айтып жібересіз бе, ақшаны қайтару қанша күн алады?",refund,refund,True
+542,"Сәлеметсіз бе, бағдарлама ақысы қанша?",price,price,True
+543,Аккаунтыма кіре алмаймын.,technical_problem,technical_problem,True
+544,Оқу ұзақтығы қанша?,course_duration,course_duration,True
+545,Тренердің тәжірибесін қайдан көруге болады?,teacher_information,payment,False
+546,"Сәлеметсіз бе, сабақтардың жалпы құны қанша?",price,price,True
+547,Маған оқу мерзімі алдын ала белгіленген бе?,course_duration,course_duration,True
+548,Ақысын қандай жолмен төлеген дұрыс?,payment,payment,True
+549,Осы бағдарламаға қалай қосыламын?,registration,registration,True
+550,Маған сабақ қай уақытта өтеді?,schedule,schedule,True
+551,"Айтып жібересіз бе, ай сайын бөлек төлеуге бола ма?",payment,payment,True
+552,Не істеуге болады? Құпиясөзімді енгізсем де кірмейді.,technical_problem,technical_problem,True
+553,Бағдарлама ұзақтығын айта аласыз ба?,course_duration,location,False
+554,"Айтып жібересіз бе, курс басталмай тұрып бас тартсам, төлемді қайтарасыздар ма?",refund,refund,True
+555,Маған оқу орны қай көшеде орналасқан?,location,location,True
+556,Не істеуге болады? Қосымша жүктелмей жатыр.,technical_problem,technical_problem,True
+557,Жеке кабинетте курс көрінбей тұр.,technical_problem,technical_problem,True
+558,Курсқа қосылу үшін форманы қайдан толтырамын?,registration,registration,True
+559,Білгім келеді: сертификатты онлайн алуға бола ма?,certificate,certificate,True
+560,"Сәлеметсіз бе, оқытушылар ауысып тұра ма?",teacher_information,teacher_information,True
+561,"Айтып жібересіз бе, сертификат алу үшін емтихан тапсыру керек пе?",certificate,certificate,True
+562,"Сәлеметсіз бе, мұғалімнің осы салада тәжірибесі бар ма?",teacher_information,teacher_information,True
+563,Маған тренердің тәжірибесін қайдан көруге болады?,teacher_information,certificate,False
+564,"Айтып жібересіз бе, кестеде қандай уақыттар бар?",schedule,schedule,True
+565,Сабаққа төленетін ақы қанша?,price,price,True
+566,"Айтып жібересіз бе, бағдарлама неше ай жүреді?",course_duration,course_duration,True
+567,Білгім келеді: сертификатта қандай ақпарат көрсетіледі?,certificate,teacher_information,False
+568,"Айтып жібересіз бе, сертификат алу үшін қандай талап бар?",certificate,certificate,True
+569,Маған курсқа қабылдану үшін қайда өтінім беремін?,registration,registration,True
+570,Маған қазіргі тариф қандай?,price,price,True
+571,Білгім келеді: курс қанша уақытқа созылады?,course_duration,course_duration,True
+572,Мәселе бар: құпиясөзімді енгізсем де кірмейді.,technical_problem,technical_problem,True
+573,"Айтып жібересіз бе, офистің орналасқан жерін көрсетесіз бе?",location,location,True
+574,"Сәлеметсіз бе, сабақ қай жерде өтеді?",location,location,True
+575,"Айтып жібересіз бе, сабақ нешеде басталады?",schedule,schedule,True
+576,Келесі сабақ қашан болады?,schedule,schedule,True
+577,Толық оқу кезеңі қанша тұрады?,price,price,True
+578,Маған төлемді кері аудару қалай жасалады?,refund,refund,True
+579,"Сәлеметсіз бе, филиалдың мекенжайы қандай?",location,location,True
+580,"Сәлеметсіз бе, қай уақытта келу керек?",schedule,location,False
+581,Маған сертификатты кімдер алады?,certificate,certificate,True
+582,"Не істеуге болады? Техникалық қате пайда болды, не істеймін?",technical_problem,technical_problem,True
+583,Маған ғимараттың адресін қайдан көремін?,location,location,True
+584,"Сәлеметсіз бе, қатысу ақысы қанша екенін айта аласыз ба?",price,price,True
+585,Білгім келеді: оқуды аяқтағаннан кейін құжат аламын ба?,certificate,certificate,True
+586,"Айтып жібересіз бе, апталық сабақ кестесі қалай құрылған?",schedule,schedule,True
+587,"Айтып жібересіз бе, банк картасымен төлей аламын ба?",payment,payment,True
+588,"Айтып жібересіз бе, топтардың сабақ уақыты бірдей ме?",schedule,schedule,True
+589,Білгім келеді: оқытушы туралы ақпарат бере аласыз ба?,teacher_information,teacher_information,True
+590,"Айтып жібересіз бе, сертификаттың қағаз нұсқасы бар ма?",certificate,certificate,True
+591,Білгім келеді: аптасына неше рет сабақ өтеді?,schedule,schedule,True
+592,"Айтып жібересіз бе, онлайн төлем қалай рәсімделеді?",payment,payment,True
+593,Мәселе бар: қосымша жүктелмей жатыр.,technical_problem,technical_problem,True
+594,"Курстан бас тартсам, ақшам қайтарыла ма?",refund,refund,True
+595,"Сәлеметсіз бе, код келмей жатыр, жүйеге кіре алмаймын.",technical_problem,technical_problem,True
+596,"Сәлеметсіз бе, мекенжайларыңыз қандай?",location,location,True
+597,"Айтып жібересіз бе, бөліп төлеуге бола ма?",payment,payment,True
+598,Білгім келеді: курс өтетін орын қайда?,location,location,True
+599,Маған оқуға қалай жазылуға болады?,registration,registration,True
+600,Сертификат жұмысқа жарай ма?,certificate,certificate,True
+601,Білгім келеді: осы деңгейді өтуге қанша уақыт кетеді?,course_duration,course_duration,True
+602,"Айтып жібересіз бе, төлем реквизиттерін қайдан аламын?",payment,payment,True
+603,Бір деңгей қанша уақытқа созылады?,course_duration,course_duration,True
+604,Білгім келеді: электронды сертификат бар ма?,certificate,certificate,True
+605,"Айтып жібересіз бе, курстың жетекшісі кім?",teacher_information,teacher_information,True
+606,Білгім келеді: оқытушылар ауысып тұра ма?,teacher_information,teacher_information,True
+607,"Айтып жібересіз бе, бағдарлама қанша күнге созылады?",course_duration,course_duration,True
+608,Электронды сертификат бар ма?,certificate,certificate,True
+609,Төлем сілтемесін жібере аласыз ба?,payment,payment,True
+610,"Айтып жібересіз бе, курсқа қабылдану үшін қайда өтінім беремін?",registration,registration,True
+611,"Сәлеметсіз бе, абонемент бағасы қандай?",price,price,True
+612,"Сәлеметсіз бе, оқытушының портфолиосын көруге бола ма?",teacher_information,teacher_information,True
+613,"Сәлеметсіз бе, сабақ кестесі қандай?",schedule,schedule,True
+614,"Сәлеметсіз бе, сертификат қандай түрде беріледі?",certificate,certificate,True
+615,Маған төлемді қалай қайтарып алуға болады?,refund,refund,True
+616,Курс өтетін орын қайда?,location,location,True
+617,Білгім келеді: сертификаттың үлгісін көруге бола ма?,certificate,teacher_information,False
+618,Сайттағы батырма жұмыс істемейді.,technical_problem,technical_problem,True
+619,Курсқа қалай тіркелемін?,registration,registration,True
+620,"Сәлеметсіз бе, оқуға қалай жазылуға болады?",registration,registration,True
+621,Білгім келеді: орталық қай жерде орналасқан?,location,location,True
+622,"Айтып жібересіз бе, төлемді қалай жасауға болады?",payment,payment,True
+623,Локацияны жібересіз бе?,location,refund,False
+624,Бағдарлама ақысы қанша?,price,price,True
+625,Білгім келеді: тіркелу үшін қандай мәліметтер керек?,registration,registration,True
+626,"Сәлеметсіз бе, қайтарымға өтінішті қайда беремін?",refund,location,False
+627,Не істеуге болады? Құпиясөзді қалпына келтіру хаты келмеді.,technical_problem,registration,False
+628,Маған қайтарым сомасы толық бола ма?,refund,refund,True
+629,Маған орталыққа жақын қандай нысан бар?,location,location,True
+630,"Айтып жібересіз бе, курс бір ай ма, әлде ұзағырақ па?",course_duration,course_duration,True
+631,"Не істеуге болады? Логин дұрыс, бірақ жүйе қабылдамайды.",technical_problem,technical_problem,True
+632,"Айтып жібересіз бе, төлем сілтемесін жібере аласыз ба?",payment,price,False
+633,Бағдарлама қанша күнге созылады?,course_duration,course_duration,True
+634,"Сәлеметсіз бе, сертификаттың қағаз нұсқасы бар ма?",certificate,certificate,True
+635,"Айтып жібересіз бе, бағдарлама ұзақтығын айта аласыз ба?",course_duration,location,False
+636,"Сәлеметсіз бе, сертификат алу үшін емтихан тапсыру керек пе?",certificate,certificate,True
+637,"Сәлеметсіз бе, сабақ басталатын нақты уақыт қандай?",schedule,schedule,True
+638,"Айтып жібересіз бе, төлемді мобильді қосымша арқылы жасай аламын ба?",payment,payment,True
+639,Маған сабақ кестесі қандай?,schedule,schedule,True
+640,"Сәлеметсіз бе, курсқа қалай тіркелемін?",registration,registration,True
+641,"Сәлеметсіз бе, төлем беті ашылмай қалды.",technical_problem,payment,False
+642,Білгім келеді: сертификаттың қағаз нұсқасы бар ма?,certificate,certificate,True
+643,"Сәлеметсіз бе, курс бір ай ма, әлде ұзағырақ па?",course_duration,course_duration,True
+644,Білгім келеді: оқытушының сертификаттары бар ма?,teacher_information,teacher_information,True
+645,"Айтып жібересіз бе, оқуды аяқтағаннан кейін құжат аламын ба?",certificate,certificate,True
+646,Мәселе бар: платформада қате шығып тұр.,technical_problem,technical_problem,True
+647,Білгім келеді: курстың жалпы ұзақтығы қандай?,course_duration,course_duration,True
+648,Білгім келеді: оқу ұзақтығы қанша?,course_duration,price,False
+649,Қорытынды сертификат беріледі ме?,certificate,certificate,True
+650,Маған ай сайын бөлек төлеуге бола ма?,payment,payment,True
+651,Оқу кезеңі қанша уақыт?,course_duration,course_duration,True
+652,"Сәлеметсіз бе, төлемді қалай қайтарып алуға болады?",refund,refund,True
+653,Төлем реквизиттерін қайдан аламын?,payment,payment,True
+654,Маған курстың нақты құнын қайдан көремін?,price,price,True
+655,Банк картасымен төлей аламын ба?,payment,payment,True
+656,Маған мекенжайларыңыз қандай?,location,location,True
+657,"Сәлеметсіз бе, сабақтың күндері мен уақытын айта аласыз ба?",schedule,location,False
+658,Маған сертификаттың қағаз нұсқасы бар ма?,certificate,certificate,True
+659,Төлемді мобильді қосымша арқылы жасай аламын ба?,payment,payment,True
+660,"Айтып жібересіз бе, курсты қандай маман өткізеді?",teacher_information,teacher_information,True
+661,Маған сабақтың күндері мен уақытын айта аласыз ба?,schedule,location,False
+662,Білгім келеді: бағдарлама қысқа мерзімді ме?,course_duration,registration,False
+663,Маған курс қай күндері болады?,schedule,certificate,False
+664,Маған курсты толық аяқтауға қанша уақыт керек?,course_duration,course_duration,True
+665,Маған кешкі топтың кестесі қандай?,schedule,schedule,True
+666,"Сәлеметсіз бе, кешкі топтың кестесі қандай?",schedule,schedule,True
+667,Сертификатта қандай ақпарат көрсетіледі?,certificate,certificate,True
+668,Не істеуге болады? Сайт жұмыс істемей жатыр.,technical_problem,technical_problem,True
+669,Бағдарлама қысқа мерзімді ме?,course_duration,certificate,False
+670,Курс қанша апта болады?,course_duration,course_duration,True
+671,"Көмектесіңізші, сайттағы батырма жұмыс істемейді.",technical_problem,technical_problem,True
+672,Маған сертификаттың үлгісін көруге бола ма?,certificate,certificate,True
+673,Білгім келеді: сабақ басталатын нақты уақыт қандай?,schedule,teacher_information,False
+674,Тіркелу қай жерден жасалады?,registration,registration,True
+675,Оқу соңында анықтама немесе сертификат аламын ба?,certificate,certificate,True
+676,"Айтып жібересіз бе, сабаққа төленетін ақы қанша?",price,price,True
+677,Мәселе бар: аккаунтыма кіре алмаймын.,technical_problem,technical_problem,True
+678,"Айтып жібересіз бе, курсқа өтінімді қалай беремін?",registration,registration,True
+679,Білгім келеді: толық оқу кезеңі қанша тұрады?,price,price,True
+680,"Сәлеметсіз бе, сайт жұмыс істемей жатыр.",technical_problem,technical_problem,True
+681,Білгім келеді: оқу орны қай көшеде орналасқан?,location,location,True
+682,"Айтып жібересіз бе, төлемді басқа адам жасай ала ма?",payment,payment,True
+683,"Сәлеметсіз бе, тренер туралы қысқаша ақпарат бар ма?",teacher_information,certificate,False
+684,Маған осы бағдарламаға қалай қосыламын?,registration,registration,True
+685,Апталық сабақ кестесі қалай құрылған?,schedule,schedule,True
+686,"Айтып жібересіз бе, нақты мекенжайды айта аласыз ба?",location,location,True
+687,"Көмектесіңізші, сабақ видеосы ашылмайды.",technical_problem,technical_problem,True
+688,"Айтып жібересіз бе, оқу орталығының адресін жібере аласыз ба?",location,location,True
+689,Оқу мерзімі алдын ала белгіленген бе?,course_duration,course_duration,True
+690,Маған орталық қай жерде орналасқан?,location,location,True
+691,Білгім келеді: курс кестесін қайдан көруге болады?,schedule,teacher_information,False
+692,Маған курс соңында сертификат беріле ме?,certificate,certificate,True
+693,Білгім келеді: орталыққа жақын қандай нысан бар?,location,teacher_information,False
+694,"Сәлеметсіз бе, төлем жасау үшін қандай деректер керек?",payment,payment,True
+695,"Айтып жібересіз бе, осы бағдарламаға қалай қосыламын?",registration,registration,True
+696,"Айтып жібересіз бе, бір деңгей қанша уақытқа созылады?",course_duration,course_duration,True
+697,"Айтып жібересіз бе, сабақтардың жалпы құны қанша?",price,price,True
+698,"Айтып жібересіз бе, ақысын қандай жолмен төлеген дұрыс?",payment,payment,True
+699,"Айтып жібересіз бе, жұмыс күндері сабақ бар ма?",schedule,schedule,True
+700,Білгім келеді: сабақ қай уақытта өтеді?,schedule,schedule,True
+701,Білгім келеді: топтардың сабақ уақыты бірдей ме?,schedule,teacher_information,False
+702,"Сәлеметсіз бе, kaspi арқылы төлеуге бола ма?",payment,payment,True
+703,Қай жағдайда төлем қайтарылады?,refund,refund,True
+704,Маған курс кестесін қайдан көруге болады?,schedule,schedule,True
+705,Қайтарым үшін қандай құжат керек?,refund,refund,True
+706,Білгім келеді: сабақ беретін маманның білімі қандай?,teacher_information,teacher_information,True
+707,Мәселе бар: төлем беті ашылмай қалды.,technical_problem,payment,False
+708,Білгім келеді: төлемді мобильді қосымша арқылы жасай аламын ба?,payment,payment,True
+709,Курсқа жазылу үшін не істеу керек?,registration,registration,True
+710,Білгім келеді: төлемді қалай жасауға болады?,payment,payment,True
+711,Оқытушының аты-жөні кім?,teacher_information,teacher_information,True
+712,"Курс басталмай тұрып бас тартсам, төлемді қайтарасыздар ма?",refund,refund,True
+713,"Сәлеметсіз бе, сабақ беретін маманның білімі қандай?",teacher_information,teacher_information,True
+714,"Сәлеметсіз бе, qR арқылы төлеуге бола ма?",payment,payment,True
+715,"Айтып жібересіз бе, толық оқу кезеңі қанша тұрады?",price,price,True
+716,"Сәлеметсіз бе, оқу мерзімі қандай?",course_duration,course_duration,True
+717,"Сәлеметсіз бе, төлемді кері аудару қалай жасалады?",refund,refund,True
+718,"Айтып жібересіз бе, оқытушының сертификаттары бар ма?",teacher_information,certificate,False
+719,"Сәлеметсіз бе, сіздердің кеңселеріңіз қайда?",location,location,True
+720,Білгім келеді: сабақ болатын жердің геолокациясын жіберіңізші.,location,teacher_information,False
+721,"Сәлеметсіз бе, оқытушының біліктілігі туралы білгім келеді.",teacher_information,teacher_information,True
+722,Білгім келеді: бағдарлама соңында ресми құжат беріле ме?,certificate,certificate,True
+723,"Айтып жібересіз бе, сабақ беретін адамның мамандығы қандай?",teacher_information,teacher_information,True
+724,"Айтып жібересіз бе, оқу кезеңі қанша уақыт?",course_duration,course_duration,True
+725,"Айтып жібересіз бе, орталыққа жақын қандай нысан бар?",location,location,True
+726,Мұғалімнің осы салада тәжірибесі бар ма?,teacher_information,teacher_information,True
+727,Маған сабақ уақыты өзгеруі мүмкін бе?,schedule,schedule,True
+728,Қайтарымға өтінішті қайда беремін?,refund,location,False
+729,Мәселе бар: жүйе мені аккаунттан шығарып жібереді.,technical_problem,technical_problem,True
+730,"Сәлеметсіз бе, осы деңгейді өтуге қанша уақыт кетеді?",course_duration,course_duration,True
+731,Сертификат қандай түрде беріледі?,certificate,certificate,True
+732,Маған сабақ беретін маманның білімі қандай?,teacher_information,teacher_information,True
+733,"Айтып жібересіз бе, курс өтетін орын қайда?",location,location,True
+734,"Сәлеметсіз бе, төлем реквизиттерін қайдан аламын?",payment,payment,True
+735,Білгім келеді: сабақтар неше айға жоспарланған?,course_duration,schedule,False
+736,"Сәлеметсіз бе, қолма-қол төлем қабылдана ма?",payment,payment,True
+737,Маған оқу аяқталғанын растайтын құжат беріле ме?,certificate,certificate,True
+738,Топтардың сабақ уақыты бірдей ме?,schedule,schedule,True
+739,"Көмектесіңізші, платформа өте баяу жұмыс істейді.",technical_problem,technical_problem,True
+740,"Айтып жібересіз бе, сертификаттың үлгісін көруге бола ма?",certificate,certificate,True
+741,"Сәлеметсіз бе, сабақтар таңертең бе, кешке ме?",schedule,schedule,True
+742,Білгім келеді: сабақты кім жүргізеді?,teacher_information,teacher_information,True
+743,Сабақ кестесі қандай?,schedule,schedule,True
+744,"Сәлеметсіз бе, курс қашан аяқталады?",course_duration,course_duration,True
+745,"Сәлеметсіз бе, аккаунтыма кіре алмаймын.",technical_problem,technical_problem,True
+746,Сабақ қай жерде өтеді?,location,location,True
+747,Бұл курста сабақ беретін мамандар туралы ақпарат бар ма?,teacher_information,teacher_information,True
+748,"Айтып жібересіз бе, курстың жалпы ұзақтығы қандай?",course_duration,course_duration,True
+749,Маған бөліп төлеуге бола ма?,payment,payment,True
+750,Маған курстың оқытушысы кім?,teacher_information,teacher_information,True
+751,Білгім келеді: тренердің тәжірибесін қайдан көруге болады?,teacher_information,teacher_information,True
+752,Білгім келеді: qR арқылы төлеуге бола ма?,payment,payment,True
+753,"Сәлеметсіз бе, тренердің тәжірибесін қайдан көруге болады?",teacher_information,registration,False
+754,"Айтып жібересіз бе, қазіргі тариф қандай?",price,price,True
+755,Мұғалімнің жұмыс тәжірибесі неше жыл?,teacher_information,teacher_information,True
+756,Маған ақысын қандай жолмен төлеген дұрыс?,payment,payment,True
+757,Маған төлемді мобильді қосымша арқылы жасай аламын ба?,payment,payment,True
+758,"Айтып жібересіз бе, осы деңгейді өтуге қанша уақыт кетеді?",course_duration,course_duration,True
+759,"Мәселе бар: логин дұрыс, бірақ жүйе қабылдамайды.",technical_problem,technical_problem,True
+760,Ай сайын бөлек төлеуге бола ма?,payment,payment,True
+761,"Сәлеметсіз бе, қайтару шарттарын түсіндіріп бересіз бе?",refund,refund,True
+762,Платформа өте баяу жұмыс істейді.,technical_problem,technical_problem,True
+763,Кіру кезінде қате хабарламасы шығады.,technical_problem,technical_problem,True
+764,"Сәлеметсіз бе, төлемнің бір бөлігін қайтаруға бола ма?",refund,refund,True
+765,Сіздердің кеңселеріңіз қайда?,location,location,True
+766,"Сәлеметсіз бе, төлемді мобильді қосымша арқылы жасай аламын ба?",payment,payment,True
+767,"Маған курстан бас тартсам, ақшам қайтарыла ма?",refund,refund,True
+768,Маған абонемент бағасы қандай?,price,price,True
+769,"Сәлеметсіз бе, курстың оқытушысы кім?",teacher_information,teacher_information,True
+770,"Сәлеметсіз бе, сіздерге бару үшін қай жерге келемін?",location,location,True
+771,Маған сабақ басталатын нақты уақыт қандай?,schedule,schedule,True
+772,"Айтып жібересіз бе, оқытушылар ауысып тұра ма?",teacher_information,price,False
+773,"Көмектесіңізші, құпиясөзімді енгізсем де кірмейді.",technical_problem,technical_problem,True
+774,Маған қандай төлем тәсілдері бар?,payment,payment,True
+775,Білгім келеді: бұл бағдарламаның құны қандай?,price,price,True
+776,Қай ауданға орналасқансыздар?,location,location,True
+777,Демалыс күндері сабақ бар ма?,schedule,schedule,True
+778,"Айтып жібересіз бе, оқытушы туралы ақпарат бере аласыз ба?",teacher_information,teacher_information,True
+779,Білгім келеді: қай мекенжайға баруым керек?,location,location,True
+780,Курс қанша уақытқа созылады?,course_duration,course_duration,True
+781,"Сәлеметсіз бе, қайтарым жасау тәртібі қандай?",refund,refund,True
+782,Төлемді кері алу жолын айтып беріңізші.,refund,refund,True
+783,Маған аптасына неше рет сабақ өтеді?,schedule,schedule,True
+784,Мәселе бар: сайттағы батырма жұмыс істемейді.,technical_problem,technical_problem,True
+785,Сіздерге бару үшін қай жерге келемін?,location,location,True
+786,Аккаунтым бұғатталып қалған сияқты.,technical_problem,technical_problem,True
+787,"Айтып жібересіз бе, сабақты тұрақты бір оқытушы жүргізе ме?",teacher_information,teacher_information,True
+788,Маған курс қашан аяқталады?,course_duration,course_duration,True
+789,"Айтып жібересіз бе, қай жағдайда төлем қайтарылады?",refund,refund,True
+790,Білгім келеді: оқу мерзімі қандай?,course_duration,course_duration,True
+791,Бағаға қандай қызметтер кіреді?,price,price,True
+792,Білгім келеді: жаңа топқа қалай жазыламын?,registration,registration,True
+793,Маған демалыс күндері сабақ бар ма?,schedule,schedule,True
+794,Маған жаңа топқа қалай жазыламын?,registration,registration,True
+795,"Мәселе бар: техникалық қате пайда болды, не істеймін?",technical_problem,technical_problem,True
+796,"Айтып жібересіз бе, сабақтар неше айға жоспарланған?",course_duration,course_duration,True
+797,"Сәлеметсіз бе, платформада қате шығып тұр.",technical_problem,technical_problem,True
+798,Бағдарлама неше ай жүреді?,course_duration,course_duration,True
+799,"Сәлеметсіз бе, курс қанша апта болады?",course_duration,course_duration,True
+800,Білгім келеді: тіркелу тәртібі қандай?,registration,registration,True
+801,Маған қай уақытта келу керек?,schedule,location,False
+802,Оқу кестесін алдын ала білуге бола ма?,schedule,teacher_information,False
+803,Білгім келеді: қайтару шарттарын түсіндіріп бересіз бе?,refund,refund,True
+804,"Сәлеметсіз бе, банк картасымен төлей аламын ба?",payment,payment,True
+805,"Айтып жібересіз бе, курс кестесін қайдан көруге болады?",schedule,schedule,True
+806,Маған банк картасымен төлей аламын ба?,payment,payment,True
+807,Маған qR арқылы төлеуге бола ма?,payment,payment,True
+808,"Білгім келеді: курстан бас тартсам, ақшам қайтарыла ма?",refund,refund,True
+809,"Сәлеметсіз бе, төлемді кері алу жолын айтып беріңізші.",refund,refund,True
+810,QR арқылы төлеуге бола ма?,payment,payment,True
+811,Маған қолма-қол төлем қабылдана ма?,payment,payment,True
+812,"Білгім келеді: курсты жалғастырмасам, қалған ақшаны қайтарасыздар ма?",refund,refund,True
+813,Білгім келеді: kaspi арқылы төлеуге бола ма?,payment,payment,True
+814,Сертификаттың қағаз нұсқасы бар ма?,certificate,certificate,True
+815,Курсқа қатысуға қалай өтініш беремін?,registration,registration,True
+816,Сіздер қалада қай жерде отырсыздар?,location,location,True
+817,Маған сабақ өтетін ғимарат қай жерде?,location,location,True
+818,"Айтып жібересіз бе, оқу ұзақтығы қанша?",course_duration,course_duration,True
+819,Маған бұл бағдарламаның құны қандай?,price,price,True
+820,"Сәлеметсіз бе, курсты қандай маман өткізеді?",teacher_information,teacher_information,True
+821,Абонемент бағасы қандай?,price,price,True
+822,Білгім келеді: сіздерге бару үшін қай жерге келемін?,location,location,True
+823,Төлем жасау үшін қандай деректер керек?,payment,payment,True
+824,Білгім келеді: курсқа қатысқандардың бәріне сертификат беріле ме?,certificate,certificate,True
+825,"Код келмей жатыр, жүйеге кіре алмаймын.",technical_problem,technical_problem,True
+826,Білгім келеді: бөліп төлеуге бола ма?,payment,payment,True
+827,"Сәлеметсіз бе, оқу ақысы қанша тұрады?",price,price,True
+828,"Айтып жібересіз бе, оқу мерзімі қандай?",course_duration,course_duration,True
+829,"Айтып жібересіз бе, тіркелу тәртібі қандай?",registration,registration,True
+830,"Айтып жібересіз бе, өтінім жіберу жолын айтып бересіз бе?",registration,registration,True
+831,Курс ақысын қалай аударамын?,payment,price,False
+832,"Айтып жібересіз бе, бір сабақтың бағасы қанша?",price,price,True
+833,"Сәлеметсіз бе, сабақ уақыты өзгеруі мүмкін бе?",schedule,schedule,True
+834,"Айтып жібересіз бе, курсқа орын брондау қалай жүреді?",registration,registration,True
+835,"Айтып жібересіз бе, абонемент бағасы қандай?",price,price,True
+836,"Айтып жібересіз бе, оқытушының портфолиосын көруге бола ма?",teacher_information,teacher_information,True
+837,Жазылу үшін қандай қадамдар бар?,registration,registration,True
+838,"Айтып жібересіз бе, курстың бағасы қанша?",price,price,True
+839,Маған сертификатты қайдан аламын?,certificate,certificate,True
+840,Білгім келеді: қай жағдайда төлем қайтарылады?,refund,refund,True
+841,Сертификаттың үлгісін көруге бола ма?,certificate,certificate,True
+842,Қолма-қол төлем қабылдана ма?,payment,payment,True
+843,"Сәлеметсіз бе, сайттағы батырма жұмыс істемейді.",technical_problem,technical_problem,True
+844,"Сәлеметсіз бе, жазылу үшін қандай қадамдар бар?",registration,registration,True
+845,Орталыққа қалай баруға болады?,location,payment,False
+846,"Сәлеметсіз бе, сіздер қалада қай жерде отырсыздар?",location,location,True
+847,Маған нақты мекенжайды айта аласыз ба?,location,location,True
+848,Жеке кабинет ашылмай тұр.,technical_problem,technical_problem,True
+849,Білгім келеді: сабақ уақыты өзгеруі мүмкін бе?,schedule,teacher_information,False
+850,Білгім келеді: абонемент бағасы қандай?,price,price,True
+851,"Айтып жібересіз бе, курс ұнамаса, ақшамды қайтара аламын ба?",refund,refund,True
+852,Білгім келеді: оқу соңында анықтама немесе сертификат аламын ба?,certificate,certificate,True
+853,"Сәлеметсіз бе, платформа өте баяу жұмыс істейді.",technical_problem,technical_problem,True
+854,Сабақтардың жалпы құны қанша?,price,price,True
+855,Білгім келеді: оқу ақысы қанша тұрады?,price,price,True
+856,Маған төлемді қайтарудан бас тартуы мүмкін бе?,refund,refund,True
+857,Маған филиалдың мекенжайы қандай?,location,location,True
+858,"Маған оқу бағдарламасына тіркелгім келеді, қалай бастаймын?",registration,registration,True
+859,"Сәлеметсіз бе, сабақ видеосы ашылмайды.",technical_problem,technical_problem,True
+860,Білгім келеді: төленген соманы қайтару мүмкін бе?,refund,refund,True
+861,"Сәлеметсіз бе, курс соңында сертификат беріле ме?",certificate,certificate,True
+862,Маған курсқа төлемді алдын ала жасау керек пе?,payment,payment,True
+863,"Сәлеметсіз бе, оқу аяқталғанын растайтын құжат беріле ме?",certificate,certificate,True
+864,"Айтып жібересіз бе, жазылу үшін қандай қадамдар бар?",registration,registration,True
+865,"Айтып жібересіз бе, оқу ақысы қанша тұрады?",price,price,True
+866,Білгім келеді: курс соңында сертификат беріле ме?,certificate,certificate,True
+867,Маған курсқа онлайн тіркелуге бола ма?,registration,registration,True
+868,Офистің орналасқан жерін көрсетесіз бе?,location,location,True
+869,"Айтып жібересіз бе, курс қай күндері болады?",schedule,location,False
+870,Білгім келеді: оқу мерзімі алдын ала белгіленген бе?,course_duration,course_duration,True
+871,Маған төлемнің бір бөлігін қайтаруға бола ма?,refund,refund,True
+872,Білгім келеді: қазіргі тариф қандай?,price,teacher_information,False
+873,"Айтып жібересіз бе, оқу орны қай көшеде орналасқан?",location,location,True
+874,Курсқа қабылдану үшін қайда өтінім беремін?,registration,registration,True
+875,Сабақ нешеде басталады?,schedule,schedule,True
+876,"Сәлеметсіз бе, сертификатты кімдер алады?",certificate,certificate,True
+877,Оқытушының портфолиосын көруге бола ма?,teacher_information,teacher_information,True
+878,"Көмектесіңізші, техникалық қате пайда болды, не істеймін?",technical_problem,technical_problem,True
+879,Оқуды аяқтағаннан кейін құжат аламын ба?,certificate,certificate,True
+880,"Сәлеметсіз бе, оқу үшін айына қанша төлеу керек?",price,price,True
+881,"Логин дұрыс, бірақ жүйе қабылдамайды.",technical_problem,technical_problem,True
+882,Мәселе бар: жеке кабинетте курс көрінбей тұр.,technical_problem,technical_problem,True
+883,Білгім келеді: оқуға қалай жазылуға болады?,registration,registration,True
+884,"Сәлеметсіз бе, орталыққа қалай баруға болады?",location,registration,False
+885,"Сәлеметсіз бе, оқу соңында анықтама немесе сертификат аламын ба?",certificate,certificate,True
+886,Білгім келеді: қайтарым үшін қандай құжат керек?,refund,refund,True
+887,Маған оқуды аяқтағаннан кейін құжат аламын ба?,certificate,certificate,True
+888,Маған оқу ұзақтығы қанша?,course_duration,course_duration,True
+889,Білгім келеді: сабақ нешеде басталады?,schedule,schedule,True
+890,"Айтып жібересіз бе, курс қанша уақытқа созылады?",course_duration,course_duration,True
+891,Маған бағдарлама ұзақтығын айта аласыз ба?,course_duration,location,False
+892,"Айтып жібересіз бе, курсқа қатысу қанша теңге тұрады?",price,price,True
+893,Маған бір деңгей қанша уақытқа созылады?,course_duration,course_duration,True
+894,Жұмыс күндері сабақ бар ма?,schedule,schedule,True
+895,"Айтып жібересіз бе, локацияны жібересіз бе?",location,location,True
+896,Маған қайтарымға өтінішті қайда беремін?,refund,refund,True
+897,Сабақты тұрақты бір оқытушы жүргізе ме?,teacher_information,teacher_information,True
+898,"Сәлеметсіз бе, нақты мекенжайды айта аласыз ба?",location,location,True
+899,"Айтып жібересіз бе, жаңа топқа қалай жазыламын?",registration,registration,True
+900,Маған курсқа жазылу ашық па?,registration,registration,True
+901,Маған сіздер қалада қай жерде отырсыздар?,location,location,True
+902,Білгім келеді: сіздер қалада қай жерде отырсыздар?,location,location,True
+903,Төлемді басқа адам жасай ала ма?,payment,payment,True
+904,Қайтару шарттарын түсіндіріп бересіз бе?,refund,refund,True
+905,"Курс бір ай ма, әлде ұзағырақ па?",course_duration,course_duration,True
+906,Курстың бағасы қанша?,price,price,True
+907,Сабақ уақыты өзгеруі мүмкін бе?,schedule,schedule,True
+908,Маған бағдарлама соңында ресми құжат беріле ме?,certificate,certificate,True
+909,Қосымша жүктелмей жатыр.,technical_problem,technical_problem,True
+910,Маған курсқа өтінімді қалай беремін?,registration,registration,True
+911,Білгім келеді: мұғалімнің жұмыс тәжірибесі неше жыл?,teacher_information,teacher_information,True
+912,Білгім келеді: бағдарлама қанша күнге созылады?,course_duration,price,False
+913,Төлем беті ашылмай қалды.,technical_problem,technical_problem,True
+914,Қайтарым сомасы толық бола ма?,refund,refund,True
+915,Маған қатысу ақысы қанша екенін айта аласыз ба?,price,price,True
+916,"Айтып жібересіз бе, бағдарлама ақысы қанша?",price,price,True
+917,"Айтып жібересіз бе, оқу құны туралы ақпарат керек.",price,price,True
+918,"Айтып жібересіз бе, курсты толық аяқтауға қанша уақыт керек?",course_duration,course_duration,True
+919,Сертификат қанша уақытта дайын болады?,certificate,certificate,True
+920,"Айтып жібересіз бе, оқу бағдарламасына тіркелгім келеді, қалай бастаймын?",registration,registration,True
+921,Білгім келеді: оқу үшін айына қанша төлеу керек?,price,price,True
+922,"Сәлеметсіз бе, оқу мерзімі алдын ала белгіленген бе?",course_duration,course_duration,True
+923,Оқытушы туралы ақпарат бере аласыз ба?,teacher_information,teacher_information,True
+924,Маған толық оқу кезеңі қанша тұрады?,price,price,True
+925,"Сәлеметсіз бе, курсқа өтінімді қалай беремін?",registration,registration,True
+926,Оқытушының сертификаттары бар ма?,teacher_information,teacher_information,True
+927,"Сәлеметсіз бе, сабақ беретін адамның мамандығы қандай?",teacher_information,teacher_information,True
+928,"Сәлеметсіз бе, техникалық қате пайда болды, не істеймін?",technical_problem,technical_problem,True
+929,Курс біткенде куәлік бересіздер ме?,certificate,certificate,True
+930,"Көмектесіңізші, аккаунтыма кіре алмаймын.",technical_problem,technical_problem,True
+931,Білгім келеді: оқу құны туралы ақпарат керек.,price,price,True
+932,"Сәлеметсіз бе, бағаға қандай қызметтер кіреді?",price,price,True
+933,Маған тіркелу тәртібі қандай?,registration,registration,True
+934,"Көмектесіңізші, логин дұрыс, бірақ жүйе қабылдамайды.",technical_problem,technical_problem,True
+935,"Айтып жібересіз бе, бағдарлама соңында ресми құжат беріле ме?",certificate,certificate,True
+936,"Сәлеметсіз бе, топтардың сабақ уақыты бірдей ме?",schedule,schedule,True
+937,Оқу орталығының адресін жібере аласыз ба?,location,location,True
+938,Не істеуге болады? Платформа өте баяу жұмыс істейді.,technical_problem,technical_problem,True
+939,"Сәлеметсіз бе, курсқа қосылу үшін форманы қайдан толтырамын?",registration,registration,True
+940,"Білгім келеді: сабақтар таңертең бе, кешке ме?",schedule,schedule,True
+941,Курс қай күндері болады?,schedule,course_duration,False
+942,Білгім келеді: төлемді қалай қайтарып алуға болады?,refund,refund,True
+943,Білгім келеді: сіздердің кеңселеріңіз қайда?,location,location,True
+944,"Сәлеметсіз бе, оқу ақысын қайда төлеймін?",payment,price,False
+945,"Сәлеметсіз бе, курсқа қатысу қанша теңге тұрады?",price,price,True
+946,"Айтып жібересіз бе, бір айлық оқу бағасы қанша?",price,price,True
+947,Тіркелу үшін қандай мәліметтер керек?,registration,registration,True
+948,"Сәлеметсіз бе, сабақтар неше айға жоспарланған?",course_duration,schedule,False
+949,Маған оқытушының аты-жөні кім?,teacher_information,teacher_information,True
+950,"Сәлеметсіз бе, сабақ болатын жердің геолокациясын жіберіңізші.",location,location,True
+951,Маған сертификатты онлайн алуға бола ма?,certificate,certificate,True
+952,Төлемді қалай жасауға болады?,payment,payment,True
+953,Маған курстың бағасы қанша?,price,price,True
+954,Маған сіздердің кеңселеріңіз қайда?,location,location,True
+955,"Айтып жібересіз бе, сабақ қай күндері және нешеде өтеді?",schedule,schedule,True
+956,"Сәлеметсіз бе, оқу кестесін алдын ала білуге бола ма?",schedule,teacher_information,False
+957,Осы курстың бағасын білгім келеді.,price,price,True
+958,"Сәлеметсіз бе, офистің орналасқан жерін көрсетесіз бе?",location,location,True
+959,Білгім келеді: сабақ кестесі қандай?,schedule,schedule,True
+960,Курстың жалпы ұзақтығы қандай?,course_duration,course_duration,True
+961,Білгім келеді: сертификат алу үшін емтихан тапсыру керек пе?,certificate,registration,False
+962,Маған қай жағдайда төлем қайтарылады?,refund,refund,True
+963,Бұл бағдарламаның құны қандай?,price,price,True
+964,"Айтып жібересіз бе, мұғалімнің тәжірибесі қандай?",teacher_information,teacher_information,True
+965,"Білгім келеді: курс басталмай тұрып бас тартсам, төлемді қайтарасыздар ма?",refund,refund,True
+966,"Сәлеметсіз бе, ақшаны қайтару қанша күн алады?",refund,refund,True
+967,"Айтып жібересіз бе, бағдарлама қысқа мерзімді ме?",course_duration,certificate,False
+968,Оқу құны туралы ақпарат керек.,price,price,True
+969,"Сәлеметсіз бе, аптасына неше рет сабақ өтеді?",schedule,schedule,True
+970,"Айтып жібересіз бе, сертификат қандай түрде беріледі?",certificate,certificate,True
+971,"Айтып жібересіз бе, ақша қайтару үшін не істеу керек?",refund,refund,True
+972,"Сәлеметсіз бе, оқу бағдарламасына тіркелгім келеді, қалай бастаймын?",registration,registration,True
+973,Не істеуге болады? Жүйеге кіре алмай жатырмын.,technical_problem,technical_problem,True
+974,Маған оқытушы туралы ақпарат бере аласыз ба?,teacher_information,teacher_information,True
+975,Маған курстың жалпы ұзақтығы қандай?,course_duration,course_duration,True
+976,Білгім келеді: оқу ақысын қайда төлеймін?,payment,price,False
+977,"Сәлеметсіз бе, сертификат жұмысқа жарай ма?",certificate,certificate,True
+978,Білгім келеді: төлем реквизиттерін қайдан аламын?,payment,price,False
+979,Білгім келеді: курс біткенде куәлік бересіздер ме?,certificate,certificate,True
+980,Мәселе бар: жүйеге кіре алмай жатырмын.,technical_problem,technical_problem,True
+981,Не істеуге болады? Кіру кезінде қате хабарламасы шығады.,technical_problem,technical_problem,True
+982,"Сәлеметсіз бе, оқытушының сертификаттары бар ма?",teacher_information,certificate,False
+983,"Сәлеметсіз бе, тіркелу үшін қандай мәліметтер керек?",registration,registration,True
+984,Білгім келеді: жазылу үшін қандай қадамдар бар?,registration,registration,True
+985,"Сәлеметсіз бе, курс басталмай тұрып бас тартсам, төлемді қайтарасыздар ма?",refund,refund,True
+986,"Сәлеметсіз бе, бұл курста сабақ беретін мамандар туралы ақпарат бар ма?",teacher_information,teacher_information,True
+987,Курсқа қатысқандардың бәріне сертификат беріле ме?,certificate,certificate,True
+988,Төлемді кері аудару қалай жасалады?,refund,refund,True
+989,"Айтып жібересіз бе, қатысушы ретінде қалай тіркелуге болады?",registration,registration,True
+990,Маған төленген соманы қайтару мүмкін бе?,refund,refund,True
+991,"Айтып жібересіз бе, оқуға қалай жазылуға болады?",registration,registration,True
+992,Маған қайтарым жасау тәртібі қандай?,refund,refund,True
+993,"Сәлеметсіз бе, сабақты тұрақты бір оқытушы жүргізе ме?",teacher_information,teacher_information,True
+994,Білгім келеді: курстың бағасы қанша?,price,price,True
+995,Білгім келеді: ғимараттың адресін қайдан көремін?,location,location,True
+996,Не істеуге болады? Төлем беті ашылмай қалды.,technical_problem,payment,False
+997,Маған сертификат жұмысқа жарай ма?,certificate,certificate,True
+998,"Сәлеметсіз бе, қосымша жүктелмей жатыр.",technical_problem,technical_problem,True
+999,Оқытушының біліктілігі туралы білгім келеді.,teacher_information,teacher_information,True
