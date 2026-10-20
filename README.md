@@ -1,82 +1,79 @@
 # KAZ-Div
 
 **KAZ-Div: A Stateless Model-Agnostic Framework for Quality-Constrained Diversity in Kazakh Language Generation**
-<img width="1672" height="941" alt="Схема KAZ-Div_ контроль разнообразия" src="https://github.com/user-attachments/assets/5cbc46fb-233a-4308-b70a-e05533690715" />
 
+![KAZ-Div framework](https://github.com/user-attachments/assets/924bdfe6-b2fb-47e8-a2bb-2567b377820a)
 
+**Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.23504237](https://doi.org/10.5281/zenodo.23504237) (revised release dated **20 October 2026**, as reported by the authors). The revised supporting materials are identified as **Data S1–S4** and **Supplementary Tables S1–S20**.
 
-This repository contains reproducibility code, frozen experimental inputs, result files, audit materials, and supplementary outputs for three primary evaluations of KAZ-Div and a stage-wise ablation analysis.
+This repository contains implementation code, frozen research inputs, task prompts, experimental configurations, saved results, statistical comparisons, and reproducibility records for the KAZ-Div study. The supplementary package on Zenodo is the referenced data deposit; some supplementary tables and human-evaluation materials are not mirrored at the repository root.
 
-## Experiments
+## Research scope
 
-### 1. Kazakh paraphrase generation
-Evaluates lexical, structural, and semantic diversity while preserving source meaning and linguistic quality.
+KAZ-Div is a stateless, model-agnostic *inference-time candidate-curation framework*. The experimental study covers three tasks:
 
-Status: **complete**.
+1. **Kazakh Paraphrase Generation** — repeated-response lexical and embedding-based semantic diversity, source fidelity, and human-rated linguistic quality.
+2. **Diverse Grounded Kazakh Question Generation** — question–answer generation conditioned on source passages, with automated structural and answer-span constraints.
+3. **Synthetic Kazakh Intent Data Generation and Downstream Classification** — training-data diversity, automatic intent-consistency checks, and downstream classification performance.
 
-### 2. Diverse grounded Kazakh question generation
-Evaluates whether repeated generation covers different answerable aspects of a source passage while maintaining grounding and answerability.
+The evaluated generators are **GPT-5.6 Sol**, **Claude Sonnet 4.6**, `issai/LLama-3.1-KazLLM-1.0-8B`, and `NousResearch/Meta-Llama-3.1-8B-Instruct`. The aim is to compare Baseline and KAZ-Div *within each model*, not to rank heterogeneous LLMs.
 
-Status: **complete**. The final run contains 4,000 scheduled observations. A KazLLM-specific audit rerun with raw-output capture is included to support analysis of Baseline parsing failures.
+## Implemented KAZ-Div workflow
 
-### 3. Synthetic Kazakh intent data and downstream classification
-Evaluates whether diversity-controlled synthetic training data improves downstream intent classification on an independent human-written test set.
+For each KAZ-Div request, a task-specific prompt requests a target of **12 candidates per generation call**, with up to **two candidate-generation calls** under the task's recovery procedure. The implemented processing sequence is:
 
-Status: **complete**.
+1. **Parse and normalise** the generated candidates; remove normalised *exact duplicates* while preserving the earliest occurrence.
+2. **Apply task-specific automated quality filtering**, including source-fidelity and length constraints for paraphrasing, question–answer/answer-span checks for grounded question generation, and intent-consistency constraints for synthetic utterances.
+3. **Construct a semantic similarity graph** from BGE-M3 CLS-pooled, L2-normalised embeddings. Connected components define semantic near-duplicate clusters.
+4. **Choose a representative per cluster** according to task-specific relevance/fidelity scores, with deterministic tie-breaking.
+5. **Sample uniformly among cluster representatives** using a request-derived pseudorandom seed; this is random sampling with reproducible outcomes under fixed inputs and seed, not a deterministic best-cluster rule.
 
-### 4. Stage-wise ablation analysis
-Separates the contribution of multi-candidate generation, quality filtering, and semantic curation using four conditions: B0 Baseline, B1 Multi-Candidate Random, B2 Quality-Filtered Random, and B3 Full KAZ-Div.
+**Task-specific recovery matters:** Paraphrase and intent generation process each candidate-generation attempt independently; candidates from unsuccessful earlier attempts are not pooled with later attempts. Grounded question generation may incrementally accumulate exact-deduplicated question–answer candidates across calls. No previous *independent* request's candidates or outputs influence the current selection.
 
-Status: **complete**. Full descriptive results and planned paired contrasts are provided with the Experiment 4 materials.
+KAZ-Div does not fine-tune LLM weights and does not synthesize a new response during post-generation selection. Automated quality-pass scores are partly defined by the pipeline's own acceptance rules; they do **not** constitute independent human validation.
 
-## Evaluated language models
+## Evaluations and available files
 
-- OpenAI GPT-5.6 Sol
-- Anthropic Claude Sonnet 4.6
-- `issai/LLama-3.1-KazLLM-1.0-8B`
-- `NousResearch/Meta-Llama-3.1-8B-Instruct`
+| Study | Repository path | Purpose |
+| --- | --- | --- |
+| **Kazakh Paraphrase Generation** | [`experiments/experiment_1_paraphrase/`](experiments/experiment_1_paraphrase/) | Five repeated outputs per source, lexical and semantic metrics, fidelity and quality analyses |
+| **Diverse Grounded Kazakh Question Generation** | [`experiments/experiment_2_question_generation/`](experiments/experiment_2_question_generation/) | Source-grounded questions; automated answer-span checks; failure audit |
+| **Synthetic Kazakh Intent Data Generation and Downstream Classification** | [`experiments/experiment_3_intent_classification/`](experiments/experiment_3_intent_classification/) | Synthetic intent training sets; TF-IDF/Logistic Regression; fixed held-out evaluation |
+| **Stage-Wise Post-Hoc Ablation Analysis** | [`experiments/experiment_4_ablation/`](experiments/experiment_4_ablation/) | B0–B3 stages, same-pool comparisons, Supplementary Tables S14–S15 |
+| **Additional Prompting and Decoding Baselines** | `experiments/Experiment 5 — Strong Diversity Baselines Compariso/` | Diversity-oriented prompting, higher temperature and taboo-word prompting (S16) |
+| **Independent Encoder-Based Fidelity Validation** | `experiments/KAZ_Div_Experiment6_LaBSE_Fidelity_Results/` and `experiments/ KAZ_Div_Experiment6_e5_Fidelity_Results/` | LaBSE / multilingual-e5-base rescoring and encoder agreement |
+| **Post-Hoc Parameter Sensitivity and Cluster-Chaining Analysis** | `experiments/KAZ_Div_Experiment7_Sensitivity_Results/` | Fidelity and duplicate thresholds, retrospective candidate availability and graph chaining |
+| **Deduplication-Controlled Downstream Reassessment** | `experiments/KAZ_Div_Experiment8_Results/` | Unique-example matching, intent stratification and TF-IDF reassessment |
+| **Multi-Seed Transformer-Based Downstream Classification Evaluation** | `experiments/KAZ_Div_Exp9/` | XLM-RoBERTa-base, group-aware validation, three training seeds (24 runs) |
 
-The purpose of the study is not to rank the language models. The models provide heterogeneous proprietary and open-weight settings in which the relative effect of Baseline versus KAZ-Div and the behaviour of the framework stages are evaluated.
+These are the current **existing directory names**; some contain spaces or legacy naming. For definitive publication-level supplementary table numbering, consult the [Zenodo supporting-information record](https://doi.org/10.5281/zenodo.23504237).
 
-## Repository structure
+## Interpretation and limitations
 
-```text
-KAZ-Div/
-├── README.md
-├── CITATION.cff
-├── requirements.txt
-├── MANIFEST.csv
-└── experiments/
-    ├── experiment_1_paraphrase/
-    ├── experiment_2_question_generation/
-    │   ├── code/
-    │   ├── data/
-    │   ├── results/
-    │   └── Experiment_2_Question_Generation_KazLLM/
-    ├── experiment_3_intent_classification/
-    └── experiment_4_ablation/
-        ├── README.md
-        ├── results/
-        ├── supplementary_table_S14_stage_wise_ablation.csv
-        └── supplementary_table_S15_planned_paired_contrasts.csv
+- **Stage-wise ablation:** B0 is conventional single-response generation, B1 random selection from reconstructed raw candidate pools, B2 random selection after quality filtering, and B3 the complete pipeline. B1–B3 share archived candidate-generation data, but not identical post-processing cost. Most of the increase over B0 occurs at B0–B1; B0 and B1 also differ in prompt and candidate-generation budget. Post-generation curation does **not** consistently improve lexical diversity compared with B1.
+- **Statistical scope:** Planned paired tests cover B1–B0, B2–B1 and B3–B2 (21 tests per model). B3–B1 is a descriptive, not confirmatory, comparison.
+- **Quality versus diversity:** Automated acceptance indicates consistency with frozen operational criteria, not independently demonstrated grammatical correctness or semantic entailment. Independent human and alternative-encoder checks provide complementary, imperfect evidence.
+- **Compute:** Candidate generation and embedding-based curation introduce additional tokens, inference calls, latency, processing and, for proprietary models, API cost.
+- **Parameter sensitivity:** Archived-pool truncation at smaller K is not the same as generating new candidate pools using K-specific prompts. BGE-M3 cosine thresholds should not be transferred directly to LaBSE or multilingual-e5-base.
+- **Downstream classification:** Row-equalised corpora can have very different numbers of unique utterances. Unique-matched TF-IDF results use **five training-example sampling seeds**, while XLM-R analyses use **three classifier-training seeds**. These measure different sources of variability. Neither study independently regenerates the synthetic corpora; the transformer experiments are instance-matched, not unique-matched.
+- **Test-set and annotation provenance:** Downstream classification uses a frozen held-out labelled set of 1,000 utterances (100 per intent). Its origin should be supported by source documentation, not inferred from filenames. Human evaluation must be interpreted using model-specific matched-source statistics alongside the ethics and consent records.
+
+## Reproducibility and software
+
+Root-level files include [`requirements.txt`](requirements.txt), [`CITATION.cff`](CITATION.cff), and [`KAZ-Div_MANIFEST_latest.csv`](KAZ-Div_MANIFEST_latest.csv). The accompanying replacement [`KAZ-Div_MANIFEST_latest.csv`](KAZ-Div_MANIFEST_latest.csv) lists **297 files** in the updated 20 October 2026 supplementary ZIP (excluding its own embedded manifest), with relative paths, byte sizes, SHA-256 hashes and source provenance. It corresponds to the available local updated archive and should be placed in the repository root with this README. The live Zenodo package should be checked against that archive before treating the checksum inventory as a verification of the public deposition.
+
+Install the general Python dependencies with:
+
+```bash
+pip install -r requirements.txt
 ```
 
-## KAZ-Div procedure
+Some studies need additional experiment-specific libraries, pretrained model weights, GPU resources, and access to proprietary inference APIs. Hosted API responses may change over time even with frozen prompts and parameters. **No API credentials are included.** Some later experimental directories contain results and configuration manifests rather than complete self-contained execution scripts; consult each directory's files to assess rerun requirements.
 
-For each request, KAZ-Div uses a temporary candidate pool and applies multi-candidate generation, task-specific quality filtering, exact deduplication, semantic near-duplicate clustering, representative selection, and final diversity-aware selection.
+## Supplementary materials
 
-The framework is stateless across independent requests: previous generated outputs, previous candidate pools, and conversation history are not used to influence subsequent requests.
-
-## Reproducibility notes
-
-API-based model outputs can change as hosted model implementations evolve. Model identifiers, frozen thresholds, prompts, random seeds, runtime metadata, result files, and audit outputs are therefore retained wherever available.
-
-API credentials are not included in this repository.
-
-## Data and results
-
-Final analysis-ready outputs are provided for the three primary experiments. Experiment 4 provides a post-hoc stage-wise ablation of Experiment 1 using frozen candidate pools and no new LLM calls. The Experiment 2 directory additionally includes a KazLLM-only audit rerun with raw-output capture for parsing-failure analysis.
+**[KAZ-Div supplementary release — Zenodo](https://doi.org/10.5281/zenodo.23504237)**. The revised package, dated **20 October 2026**, covers **Data S1–S4 and Tables S1–S20**, including the additional prompting/decoding baselines, independent encoder-based fidelity validation, parameter sensitivity and cluster-chaining analysis, deduplication-controlled downstream reassessment, multi-seed transformer classification, and model-specific human-evaluation statistics.
 
 ## Citation
 
-Please cite the accompanying paper if you use the framework, code, or released experimental materials.
+Cite the [Zenodo record](https://doi.org/10.5281/zenodo.23504237) when using the supplementary data, and cite the KAZ-Div paper when its final publication metadata become available. The replacement [`CITATION.cff`](CITATION.cff) in this update package aligns the author list with the revised manuscript (Arailym Tleubayeva, Zhansaya Makhambetova, Altynbek Seitenov and Pinar Sarisaray Boluk). Verify the author list and publication metadata with all authors before creating a software release.
