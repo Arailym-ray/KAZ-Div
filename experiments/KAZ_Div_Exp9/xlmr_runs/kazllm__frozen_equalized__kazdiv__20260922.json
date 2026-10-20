@@ -1,0 +1,101 @@
+{
+  "provider": "kazllm",
+  "method": "kazdiv",
+  "mode": "frozen_equalized",
+  "seed": 20260922,
+  "model": "FacebookAI/xlm-roberta-base",
+  "n_train_total_before_val_split": 370,
+  "n_fit": 298,
+  "n_validation": 72,
+  "n_unique_training": 354,
+  "validation_intents": [
+    "certificate",
+    "course_duration",
+    "location",
+    "payment",
+    "price",
+    "refund",
+    "registration",
+    "schedule",
+    "teacher_information",
+    "technical_problem"
+  ],
+  "excluded_validation_intents": {},
+  "n_fit_unique": 284,
+  "n_validation_unique": 70,
+  "validation_split": "canonical_group_shared_eligible_intents_v3",
+  "train_validation_exact_overlap": 0,
+  "sample_sha256": "d033cae79390c283ae8724ddc603fcbb10136ba2dce54e1d2b83361c952615b2",
+  "config_sha256": "5d6871e87540c744b0fbe7811795d8855ac2a3909cff0513d84a207b96cd3b50",
+  "test_sha256": "df417d09a7ef2fa243b7e9e4408fedf861c6ecadb27a5a48a4dae83206c3a155",
+  "best_validation_macro_f1": 0.8205920060331826,
+  "best_epoch": 9,
+  "test_macro_f1": 0.727542947750272,
+  "test_accuracy": 0.729,
+  "test_predicted_classes": 10,
+  "collapsed_to_one_class": false,
+  "train_seconds": 19.25749294299999,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 2.315688258723209,
+      "validation_macro_f1": 0.017721518987341773,
+      "validation_predicted_classes": 1
+    },
+    {
+      "epoch": 2,
+      "loss": 2.317321413441708,
+      "validation_macro_f1": 0.018666666666666668,
+      "validation_predicted_classes": 2
+    },
+    {
+      "epoch": 3,
+      "loss": 2.28908950404117,
+      "validation_macro_f1": 0.12840909090909092,
+      "validation_predicted_classes": 5
+    },
+    {
+      "epoch": 4,
+      "loss": 2.2243977345918355,
+      "validation_macro_f1": 0.47206115779645197,
+      "validation_predicted_classes": 10
+    },
+    {
+      "epoch": 5,
+      "loss": 2.1212269757923328,
+      "validation_macro_f1": 0.6550678733031675,
+      "validation_predicted_classes": 10
+    },
+    {
+      "epoch": 6,
+      "loss": 2.0026200194107857,
+      "validation_macro_f1": 0.7232695409165998,
+      "validation_predicted_classes": 10
+    },
+    {
+      "epoch": 7,
+      "loss": 1.8878182925676044,
+      "validation_macro_f1": 0.7362598839069426,
+      "validation_predicted_classes": 10
+    },
+    {
+      "epoch": 8,
+      "loss": 1.7598028120241667,
+      "validation_macro_f1": 0.7736291649526944,
+      "validation_predicted_classes": 10
+    },
+    {
+      "epoch": 9,
+      "loss": 1.663549027944866,
+      "validation_macro_f1": 0.8205920060331826,
+      "validation_predicted_classes": 10
+    },
+    {
+      "epoch": 10,
+      "loss": 1.6225780060416775,
+      "validation_macro_f1": 0.8205920060331826,
+      "validation_predicted_classes": 10
+    }
+  ],
+  "test_predictions_verified": true
+}

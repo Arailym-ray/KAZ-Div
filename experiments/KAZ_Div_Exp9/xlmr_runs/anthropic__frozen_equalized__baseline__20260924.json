@@ -1,0 +1,89 @@
+{
+  "provider": "anthropic",
+  "method": "baseline",
+  "mode": "frozen_equalized",
+  "seed": 20260924,
+  "model": "FacebookAI/xlm-roberta-base",
+  "n_train_total_before_val_split": 270,
+  "n_fit": 207,
+  "n_validation": 63,
+  "n_unique_training": 104,
+  "validation_intents": [
+    "certificate",
+    "course_duration",
+    "location",
+    "payment",
+    "price",
+    "refund",
+    "registration",
+    "schedule",
+    "teacher_information",
+    "technical_problem"
+  ],
+  "excluded_validation_intents": {},
+  "n_fit_unique": 82,
+  "n_validation_unique": 22,
+  "validation_split": "canonical_group_shared_eligible_intents_v3",
+  "train_validation_exact_overlap": 0,
+  "sample_sha256": "bf5687de5d3dfc8f6d4b630227d19a18f93910a635a28a05155caf10fc397d89",
+  "config_sha256": "5d6871e87540c744b0fbe7811795d8855ac2a3909cff0513d84a207b96cd3b50",
+  "test_sha256": "df417d09a7ef2fa243b7e9e4408fedf861c6ecadb27a5a48a4dae83206c3a155",
+  "best_validation_macro_f1": 0.82,
+  "best_epoch": 5,
+  "test_macro_f1": 0.4978768261584978,
+  "test_accuracy": 0.53,
+  "test_predicted_classes": 9,
+  "collapsed_to_one_class": false,
+  "train_seconds": 14.339925475999962,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 2.3009119033813477,
+      "validation_macro_f1": 0.00909090909090909,
+      "validation_predicted_classes": 1
+    },
+    {
+      "epoch": 2,
+      "loss": 2.257137518662673,
+      "validation_macro_f1": 0.1464199134199134,
+      "validation_predicted_classes": 5
+    },
+    {
+      "epoch": 3,
+      "loss": 2.1185413690713735,
+      "validation_macro_f1": 0.20433566433566433,
+      "validation_predicted_classes": 6
+    },
+    {
+      "epoch": 4,
+      "loss": 1.9640287894469042,
+      "validation_macro_f1": 0.6930158730158731,
+      "validation_predicted_classes": 9
+    },
+    {
+      "epoch": 5,
+      "loss": 1.732263757632329,
+      "validation_macro_f1": 0.82,
+      "validation_predicted_classes": 9
+    },
+    {
+      "epoch": 6,
+      "loss": 1.5121923501674945,
+      "validation_macro_f1": 0.82,
+      "validation_predicted_classes": 9
+    },
+    {
+      "epoch": 7,
+      "loss": 1.3424507562930768,
+      "validation_macro_f1": 0.82,
+      "validation_predicted_classes": 9
+    },
+    {
+      "epoch": 8,
+      "loss": 1.2538184844530547,
+      "validation_macro_f1": 0.82,
+      "validation_predicted_classes": 9
+    }
+  ],
+  "test_predictions_verified": true
+}

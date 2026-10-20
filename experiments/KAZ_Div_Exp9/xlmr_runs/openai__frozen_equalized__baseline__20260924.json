@@ -1,0 +1,87 @@
+{
+  "provider": "openai",
+  "method": "baseline",
+  "mode": "frozen_equalized",
+  "seed": 20260924,
+  "model": "FacebookAI/xlm-roberta-base",
+  "n_train_total_before_val_split": 410,
+  "n_fit": 340,
+  "n_validation": 70,
+  "n_unique_training": 51,
+  "validation_intents": [
+    "certificate",
+    "course_duration",
+    "payment",
+    "price",
+    "refund",
+    "registration",
+    "schedule",
+    "teacher_information",
+    "technical_problem"
+  ],
+  "excluded_validation_intents": {
+    "location": {
+      "baseline": 1,
+      "kazdiv": 30
+    }
+  },
+  "n_fit_unique": 40,
+  "n_validation_unique": 11,
+  "validation_split": "canonical_group_shared_eligible_intents_v3",
+  "train_validation_exact_overlap": 0,
+  "sample_sha256": "1cd930005441d81001e836676e21c70ee63cc6025653c6c65d9638f16d3f547a",
+  "config_sha256": "5d6871e87540c744b0fbe7811795d8855ac2a3909cff0513d84a207b96cd3b50",
+  "test_sha256": "df417d09a7ef2fa243b7e9e4408fedf861c6ecadb27a5a48a4dae83206c3a155",
+  "best_validation_macro_f1": 1.0,
+  "best_epoch": 4,
+  "test_macro_f1": 0.41148388585581425,
+  "test_accuracy": 0.472,
+  "test_predicted_classes": 10,
+  "collapsed_to_one_class": false,
+  "train_seconds": 9.558176769000056,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 2.3101145137440073,
+      "validation_macro_f1": 0.02321724709784411,
+      "validation_predicted_classes": 3
+    },
+    {
+      "epoch": 2,
+      "loss": 2.181413076140664,
+      "validation_macro_f1": 0.2263374485596708,
+      "validation_predicted_classes": 3
+    },
+    {
+      "epoch": 3,
+      "loss": 1.9572100693529302,
+      "validation_macro_f1": 0.4521072796934866,
+      "validation_predicted_classes": 6
+    },
+    {
+      "epoch": 4,
+      "loss": 1.681630557233637,
+      "validation_macro_f1": 1.0,
+      "validation_predicted_classes": 9
+    },
+    {
+      "epoch": 5,
+      "loss": 1.395393192768097,
+      "validation_macro_f1": 1.0,
+      "validation_predicted_classes": 9
+    },
+    {
+      "epoch": 6,
+      "loss": 1.1317206431518902,
+      "validation_macro_f1": 1.0,
+      "validation_predicted_classes": 9
+    },
+    {
+      "epoch": 7,
+      "loss": 0.9186991940845143,
+      "validation_macro_f1": 1.0,
+      "validation_predicted_classes": 9
+    }
+  ],
+  "test_predictions_verified": true
+}
