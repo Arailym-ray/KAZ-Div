@@ -1,0 +1,20 @@
+{
+  "config_sha256": "5d6871e87540c744b0fbe7811795d8855ac2a3909cff0513d84a207b96cd3b50",
+  "config": {
+    "experiment": "Exp9",
+    "source_commit": "15de1fceb89b2c2d94cde1724dadbb52d281d3e5",
+    "test_sha256": "df417d09a7ef2fa243b7e9e4408fedf861c6ecadb27a5a48a4dae83206c3a155",
+    "train_sha256": "b359652af93794e995dca34c2f1ec6b8f02ac3bf7014a904445bc21ee2aeb486",
+    "model": "FacebookAI/xlm-roberta-base",
+    "epochs": 10,
+    "patience": 3,
+    "min_epochs": 2,
+    "lr": 1e-05,
+    "batch_size": 16,
+    "max_length": 96,
+    "validation_fraction": 0.2,
+    "validation_split": "canonical_group_shared_eligible_intents_v3",
+    "weight_decay": 0.01,
+    "amp": "off"
+  }
+}

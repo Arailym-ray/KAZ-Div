@@ -1,0 +1,29 @@
+{
+  "source_commit": "15de1fceb89b2c2d94cde1724dadbb52d281d3e5",
+  "sources_sha256": {
+    "train": "b359652af93794e995dca34c2f1ec6b8f02ac3bf7014a904445bc21ee2aeb486",
+    "test": "df417d09a7ef2fa243b7e9e4408fedf861c6ecadb27a5a48a4dae83206c3a155",
+    "intents": "1df07f66f7f7164f999503322b1a9a858e147229bcb7d53edbd1e886ee1dbc02",
+    "prompts": "0ae55e805ecfcad485900a82877ee1d173b4f38fba01353f45b706c3e4d96c04",
+    "prior_summary": "fa036932b453b53bf958d34b46e9828a614e2e4e6f26d7247e3698033296ed44"
+  },
+  "train_sha256": "b359652af93794e995dca34c2f1ec6b8f02ac3bf7014a904445bc21ee2aeb486",
+  "test_sha256": "df417d09a7ef2fa243b7e9e4408fedf861c6ecadb27a5a48a4dae83206c3a155",
+  "config_sha256": "5d6871e87540c744b0fbe7811795d8855ac2a3909cff0513d84a207b96cd3b50",
+  "regeneration_quota_complete_by_provider": {
+    "openai": false,
+    "anthropic": false,
+    "kazllm": false,
+    "llama": false
+  },
+  "actual_xlmr_runs": 24,
+  "current_stage": "xlmr_frozen",
+  "full_design_requires": 24,
+  "notes": [
+    "Use of the same original Baseline prompt does not guarantee uniqueness",
+    "Do not count duplicate attempts as unique training samples",
+    "XLM-R validation groups identical texts; validation covers only classes with at least two unique samples in BOTH Baseline and KAZ-Div",
+    "A model collapsing to one label stays in the report",
+    "No test set was used for hyperparameter selection"
+  ]
+}
