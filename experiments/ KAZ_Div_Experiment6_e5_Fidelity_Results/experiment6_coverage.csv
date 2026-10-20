@@ -1,7 +1,0 @@
-﻿provider,condition,n_outputs,n_sources,successful,expected,complete
-openai,B0_baseline,500,100,500,500,True
-openai,B1_multi_candidate_random,500,100,500,500,True
-openai,B3_full_kazdiv,500,100,500,500,True
-openai,diversity_prompt,500,100,500,500,True
-openai,high_temperature,500,100,500,500,True
-openai,taboo_word,500,100,500,500,True
