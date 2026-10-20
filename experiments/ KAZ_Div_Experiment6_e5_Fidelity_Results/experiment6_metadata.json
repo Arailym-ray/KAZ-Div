@@ -1,0 +1,36 @@
+{
+  "experiment": "Experiment 6 - Independent Encoder-Based Fidelity Validation",
+  "created_utc": "2026-10-14T07:16:29.478007+00:00",
+  "source_experiment5_file": "KAZ_Div_Experiment5_Revision_Supplement.zip",
+  "source_experiment5_sha256": "99f8233fa3a751a548e90fb06846cd66aecd5acf22450fc5d414fedc3cb75f3c",
+  "source_experiment4_raw_url": "https://raw.githubusercontent.com/Arailym-ray/KAZ-Div/main/experiments/experiment_4_ablation/results/api_models/experiment4_ablation_observations.csv",
+  "source_experiment4_raw_sha256": "d9e72d94bb6d42874b207c168c6b59711addf518a617ee16aeac3763d57ec606",
+  "encoders": {
+    "e5": "intfloat/multilingual-e5-base"
+  },
+  "embedding_processing": "LaBSE: original text; multilingual-e5-base: query: prefix to both sides; both L2-normalized",
+  "scoring": "cosine similarity(source_text, generated_paraphrase)",
+  "generator": "GPT-5.6 Sol (historical outputs; no fresh generation)",
+  "methods": [
+    "B0_baseline",
+    "diversity_prompt",
+    "high_temperature",
+    "taboo_word",
+    "B1_multi_candidate_random",
+    "B3_full_kazdiv"
+  ],
+  "total_scored_observations": 3000,
+  "source_count": 100,
+  "repeats_per_method": 5,
+  "seed": 20260922,
+  "bootstrap_resamples": 5000,
+  "permutations": 10000,
+  "multiplicity": "Holm within each encoder across seven preplanned comparisons",
+  "caveats": [
+    "Independent embedding similarity is not human-validated entailment or semantic correctness.",
+    "BGE-M3 0.75 filtering threshold cannot be transferred to LaBSE or E5.",
+    "B1 and B3 were post-hoc derived from the same candidate-pool generations.",
+    "B0/D1/D2/D3 and B1/B3 are not generator-compute-matched.",
+    "New D1-D3 conditions have GPT-5.6 Sol data only."
+  ]
+}
