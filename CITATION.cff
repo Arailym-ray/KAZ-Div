@@ -1,16 +1,18 @@
 cff-version: 1.2.0
-message: "If you use this software or data, please cite the accompanying paper."
+message: "If you use this software, please cite the accompanying KAZ-Div paper when bibliographic details become available; cite the separate Zenodo deposit when using its data."
 title: "KAZ-Div: A Stateless Model-Agnostic Framework for Quality-Constrained Diversity in Kazakh Language Generation"
 type: software
 authors:
   - family-names: "Tleubayeva"
     given-names: "Arailym"
     orcid: "https://orcid.org/0000-0001-9560-9756"
-  - family-names: "Mansurova"
-    given-names: "Aigerim"
   - family-names: "Makhambetova"
     given-names: "Zhansaya"
+  - family-names: "Seitenov"
+    given-names: "Altynbek"
   - family-names: "Sarisaray Boluk"
     given-names: "Pinar"
 version: "1.0.0"
 date-released: "2026-09-30"
+url: "https://github.com/Arailym-ray/KAZ-Div"
+repository-code: "https://github.com/Arailym-ray/KAZ-Div"
