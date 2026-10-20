@@ -1,0 +1,55 @@
+{
+  "experiment": "KAZ-Div Experiment 7 — post-hoc sensitivity analysis",
+  "scope": "full",
+  "providers": [
+    "kazllm",
+    "llama"
+  ],
+  "reference": {
+    "tau_fid": 0.75,
+    "tau_dup": 0.95,
+    "K": 12
+  },
+  "grid": {
+    "fidelity": [
+      0.7,
+      0.75,
+      0.8,
+      0.85
+    ],
+    "duplicate": [
+      0.9,
+      0.95,
+      0.97
+    ],
+    "K": [
+      4,
+      6,
+      8,
+      12
+    ],
+    "full_factorial": true
+  },
+  "source_dataset": "Original Experiment 1 candidate pools (repository JSONL)",
+  "source_url": "https://raw.githubusercontent.com/Arailym-ray/KAZ-Div/main/experiments/experiment_1_paraphrase/results/experiment1_results.jsonl",
+  "source_sha256": "e2fc9ad2a045deb24fc6995e46ca64a3119d1b1b212daea36d4261393328ca98",
+  "n_original_records": 1000,
+  "n_usable_records": 995,
+  "embedding_model": "BAAI/bge-m3",
+  "pooling": "CLS + L2 normalization",
+  "max_length": 512,
+  "seed": 20260922,
+  "statistical_unit": "source_id; five repetitions per source",
+  "K_interpretation": "prefix of recovered raw candidates, except K=12 uses full recovered original pool (possibly >12 candidates)",
+  "limitations": [
+    "No new K-specific LLM prompts",
+    "Only providers with raw candidate pools archived",
+    "No human semantic fidelity assessment",
+    "Original BGE-M3 embedding values may differ slightly owing to GPU dtype/library versions",
+    "Computed success is conditional on archived successful KAZ-Div candidate pools; no unseen retry generations are simulated"
+  ],
+  "reference_exact_match_per_provider": {
+    "kazllm": 0.9899396378269618,
+    "llama": 0.9759036144578314
+  }
+}
