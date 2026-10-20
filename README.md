@@ -72,7 +72,7 @@ Some studies need additional experiment-specific libraries, pretrained model wei
 
 ## Supplementary materials
 
-**[KAZ-Div supplementary release — Zenodo](https://doi.org/10.5281/zenodo.23504237)**. The revised package, dated **20 October 2026**, covers **Data S1–S4 and Tables S1–S20**, including the additional prompting/decoding baselines, independent encoder-based fidelity validation, parameter sensitivity and cluster-chaining analysis, deduplication-controlled downstream reassessment, multi-seed transformer classification, and model-specific human-evaluation statistics.
+**[KAZ-Div supplementary release — Zenodo](https://doi.org/10.5281/zenodo.23506385)**. The revised package, dated **20 October 2026**, covers **Data S1–S4 and Tables S1–S22**, including the additional prompting/decoding baselines, independent encoder-based fidelity validation, parameter sensitivity and cluster-chaining analysis, deduplication-controlled downstream reassessment, multi-seed transformer classification, and model-specific human-evaluation statistics.
 
 ## Citation
 
