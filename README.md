@@ -4,7 +4,7 @@
 
 <img width="6800" height="4012" alt="kaz_div_framework_v2" src="https://github.com/user-attachments/assets/63ef29ba-7806-4aa4-9e40-2e79602c5237" />
 
-**Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.23506385](https://doi.org/10.5281/zenodo.23506385) (revised release, November 2026). The supporting materials are identified as **Data S1–S3** and **Supplementary Tables S1–S21**. No human-evaluation data are included.
+**Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.23916224](https://zenodo.org/records/23916224) (revised release, November 2026). 
 
 This repository contains implementation code, frozen research inputs, task prompts, experimental configurations, saved results, statistical comparisons, and reproducibility records for the KAZ-Div study. The supplementary package on Zenodo is the referenced data deposit; some supplementary tables are not mirrored at the repository root.
 
@@ -72,9 +72,9 @@ Some studies need additional experiment-specific libraries, pretrained model wei
 
 ## Supplementary materials
 
-**[KAZ-Div supplementary release — Zenodo](https://doi.org/10.5281/zenodo.23506385)**. The revised package (November 2026) covers **Data S1–S3 and Tables S1–S21**, including the additional prompting/decoding baselines, independent encoder-based fidelity validation, parameter sensitivity and cluster-chaining analysis, deduplication-controlled downstream reassessment, multi-seed transformer classification, and paraphrase copy rates (Table S21).
+**[KAZ-Div supplementary release — Zenodo]([https://zenodo.org/records/23916224](https://doi.org/10.5281/zenodo.23506385))**.
 
 
 ## Citation
 
-Cite the [Zenodo record](https://doi.org/10.5281/zenodo.23504237) when using the supplementary data, and cite the KAZ-Div paper when its final publication metadata become available. The replacement [`CITATION.cff`](CITATION.cff) in this update package aligns the author list with the revised manuscript (Arailym Tleubayeva, Zhansaya Makhambetova, Altynbek Seitenov and Pinar Sarisaray Boluk). Verify the author list and publication metadata with all authors before creating a software release.
+Cite the [Zenodo record](https://doi.org/10.5281/zenodo.23506385) when using the supplementary data, and cite the KAZ-Div paper when its final publication metadata become available. The replacement [`CITATION.cff`](CITATION.cff) in this update package aligns the author list with the revised manuscript (Arailym Tleubayeva, Zhansaya Makhambetova, Altynbek Seitenov and Pinar Sarisaray Boluk). Verify the author list and publication metadata with all authors before creating a software release.
