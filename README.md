@@ -1,18 +1,18 @@
 # KAZ-Div
 
-**KAZ-Div: A Stateless Model-Agnostic Framework for Quality-Constrained Diversity in Kazakh Language Generation**
+**KAZ-Div: A Model-Agnostic Framework for Quality-Constrained Diversity in Kazakh Language Generation**
 
 <img width="6800" height="4012" alt="kaz_div_framework_v2" src="https://github.com/user-attachments/assets/63ef29ba-7806-4aa4-9e40-2e79602c5237" />
 
-**Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.23504237](https://doi.org/10.5281/zenodo.23506385) (revised release dated **20 October 2026**, as reported by the authors). The revised supporting materials are identified as **Data S1–S4** and **Supplementary Tables S1–S20**.
+**Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.23506385](https://doi.org/10.5281/zenodo.23506385) (revised release, November 2026). The supporting materials are identified as **Data S1–S3** and **Supplementary Tables S1–S21**. No human-evaluation data are included.
 
-This repository contains implementation code, frozen research inputs, task prompts, experimental configurations, saved results, statistical comparisons, and reproducibility records for the KAZ-Div study. The supplementary package on Zenodo is the referenced data deposit; some supplementary tables and human-evaluation materials are not mirrored at the repository root.
+This repository contains implementation code, frozen research inputs, task prompts, experimental configurations, saved results, statistical comparisons, and reproducibility records for the KAZ-Div study. The supplementary package on Zenodo is the referenced data deposit; some supplementary tables are not mirrored at the repository root.
 
 ## Research scope
 
 KAZ-Div is a stateless, model-agnostic *inference-time candidate-curation framework*. The experimental study covers three tasks:
 
-1. **Kazakh Paraphrase Generation** — repeated-response lexical and embedding-based semantic diversity, source fidelity, and human-rated linguistic quality.
+1. **Kazakh Paraphrase Generation** — repeated-response lexical and embedding-based semantic diversity, source fidelity, and exact-/near-copy rates (Table S21).
 2. **Diverse Grounded Kazakh Question Generation** — question–answer generation conditioned on source passages, with automated structural and answer-span constraints.
 3. **Synthetic Kazakh Intent Data Generation and Downstream Classification** — training-data diversity, automatic intent-consistency checks, and downstream classification performance.
 
@@ -46,21 +46,21 @@ KAZ-Div does not fine-tune LLM weights and does not synthesize a new response du
 | **Deduplication-Controlled Downstream Reassessment** | `experiments/KAZ_Div_Experiment8_Results/` | Unique-example matching, intent stratification and TF-IDF reassessment |
 | **Multi-Seed Transformer-Based Downstream Classification Evaluation** | `experiments/KAZ_Div_Exp9/` | XLM-RoBERTa-base, group-aware validation, three training seeds (24 runs) |
 
-These are the current **existing directory names**; some contain spaces or legacy naming. For definitive publication-level supplementary table numbering, consult the [Zenodo supporting-information record](https://doi.org/10.5281/zenodo.23504237).
+These are the current **existing directory names**; some contain spaces or legacy naming. For definitive publication-level supplementary table numbering, consult the [Zenodo supporting-information record](https://doi.org/10.5281/zenodo.23506385).
 
 ## Interpretation and limitations
 
 - **Stage-wise ablation:** B0 is conventional single-response generation, B1 random selection from reconstructed raw candidate pools, B2 random selection after quality filtering, and B3 the complete pipeline. B1–B3 share archived candidate-generation data, but not identical post-processing cost. Most of the increase over B0 occurs at B0–B1; B0 and B1 also differ in prompt and candidate-generation budget. Post-generation curation does **not** consistently improve lexical diversity compared with B1.
 - **Statistical scope:** Planned paired tests cover B1–B0, B2–B1 and B3–B2 (21 tests per model). B3–B1 is a descriptive, not confirmatory, comparison.
-- **Quality versus diversity:** Automated acceptance indicates consistency with frozen operational criteria, not independently demonstrated grammatical correctness or semantic entailment. Independent human and alternative-encoder checks provide complementary, imperfect evidence.
+- **Quality versus diversity:** Automated acceptance indicates consistency with frozen operational criteria, not independently demonstrated grammatical correctness or semantic entailment. Alternative-encoder checks (LaBSE, multilingual-e5-base) cover source fidelity only. No human evaluation is reported: rating files prepared for an earlier planned evaluation contained LLM-generated pre-annotations and were withdrawn.
 - **Compute:** Candidate generation and embedding-based curation introduce additional tokens, inference calls, latency, processing and, for proprietary models, API cost.
 - **Parameter sensitivity:** Archived-pool truncation at smaller K is not the same as generating new candidate pools using K-specific prompts. BGE-M3 cosine thresholds should not be transferred directly to LaBSE or multilingual-e5-base.
 - **Downstream classification:** Row-equalised corpora can have very different numbers of unique utterances. Unique-matched TF-IDF results use **five training-example sampling seeds**, while XLM-R analyses use **three classifier-training seeds**. These measure different sources of variability. Neither study independently regenerates the synthetic corpora; the transformer experiments are instance-matched, not unique-matched.
-- **Test-set and annotation provenance:** Downstream classification uses a frozen held-out labelled set of 1,000 utterances (100 per intent). Its origin should be supported by source documentation, not inferred from filenames. Human evaluation must be interpreted using model-specific matched-source statistics alongside the ethics and consent records.
+- **Test-set provenance:** Downstream classification uses a frozen held-out labelled set of 1,000 utterances (100 per intent). Its origin should be supported by source documentation, not inferred from filenames.
 
 ## Reproducibility and software
 
-Root-level files include [`requirements.txt`](requirements.txt), [`CITATION.cff`](CITATION.cff), and [`KAZ-Div_MANIFEST_latest.csv`](KAZ-Div_MANIFEST_latest.csv). The accompanying replacement [`KAZ-Div_MANIFEST_latest.csv`](KAZ-Div_MANIFEST_latest.csv) lists **297 files** in the updated 20 October 2026 supplementary ZIP (excluding its own embedded manifest), with relative paths, byte sizes, SHA-256 hashes and source provenance. It corresponds to the available local updated archive and should be placed in the repository root with this README. The live Zenodo package should be checked against that archive before treating the checksum inventory as a verification of the public deposition.
+Root-level files include [`requirements.txt`](requirements.txt) and [`CITATION.cff`](CITATION.cff). File sizes and SHA-256 checksums of the supplementary package are listed in the MANIFEST inside the Zenodo record.
 
 Install the general Python dependencies with:
 
@@ -72,7 +72,8 @@ Some studies need additional experiment-specific libraries, pretrained model wei
 
 ## Supplementary materials
 
-**[KAZ-Div supplementary release — Zenodo](https://doi.org/10.5281/zenodo.23506385)**. The revised package, dated **20 October 2026**, covers **Data S1–S4 and Tables S1–S22**, including the additional prompting/decoding baselines, independent encoder-based fidelity validation, parameter sensitivity and cluster-chaining analysis, deduplication-controlled downstream reassessment, multi-seed transformer classification, and model-specific human-evaluation statistics.
+**[KAZ-Div supplementary release — Zenodo](https://doi.org/10.5281/zenodo.23506385)**. The revised package (November 2026) covers **Data S1–S3 and Tables S1–S21**, including the additional prompting/decoding baselines, independent encoder-based fidelity validation, parameter sensitivity and cluster-chaining analysis, deduplication-controlled downstream reassessment, multi-seed transformer classification, and paraphrase copy rates (Table S21).
+
 
 ## Citation
 
