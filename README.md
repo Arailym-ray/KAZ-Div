@@ -4,7 +4,7 @@
 
 <img width="6800" height="4012" alt="kaz_div_framework_v2" src="https://github.com/user-attachments/assets/63ef29ba-7806-4aa4-9e40-2e79602c5237" />
 
-**Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.23916224](https://zenodo.org/records/23916224) (revised release, November 2026). 
+**Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.23916224](https://zenodo.org/records/24104684) (revised release, November 2026). 
 
 This repository contains implementation code, frozen research inputs, task prompts, experimental configurations, saved results, statistical comparisons, and reproducibility records for the KAZ-Div study. The supplementary package on Zenodo is the referenced data deposit; some supplementary tables are not mirrored at the repository root.
 
@@ -73,9 +73,9 @@ Some studies need additional experiment-specific libraries, pretrained model wei
 
 ## Supplementary materials
 
-**[KAZ-Div supplementary release — Zenodo](https://doi.org/10.5281/zenodo.23916224)**
+**[KAZ-Div supplementary release — Zenodo](https://doi.org/10.5281/zenodo.24104684)**
 
 
 ## Citation
 
-Cite the [Zenodo record](https://doi.org/10.5281/zenodo.23506385) when using the supplementary data, and cite the KAZ-Div paper when its final publication metadata become available. Authors: Arailym Tleubayeva, Zhansaya Makhambetova, Altynbek Seitenov and Pinar Sarisaray Boluk (see [`CITATION.cff`](CITATION.cff)).
+Cite the [Zenodo record](https://doi.org/10.5281/zenodo.24104684) when using the supplementary data, and cite the KAZ-Div paper when its final publication metadata become available. Authors: Arailym Tleubayeva, Zhansaya Makhambetova, Altynbek Seitenov and Pinar Sarisaray Boluk (see [`CITATION.cff`](CITATION.cff)).
