@@ -52,11 +52,12 @@ These are the current **existing directory names**; some contain spaces or legac
 
 - **Stage-wise ablation:** B0 is conventional single-response generation, B1 random selection from reconstructed raw candidate pools, B2 random selection after quality filtering, and B3 the complete pipeline. B1–B3 share archived candidate-generation data, but not identical post-processing cost. Most of the increase over B0 occurs at B0–B1; B0 and B1 also differ in prompt and candidate-generation budget. Post-generation curation does **not** consistently improve lexical diversity compared with B1.
 - **Statistical scope:** Planned paired tests cover B1–B0, B2–B1 and B3–B2 (21 tests per model). B3–B1 is a descriptive, not confirmatory, comparison.
-- **Quality versus diversity:** Automated acceptance indicates consistency with frozen operational criteria, not independently demonstrated grammatical correctness or semantic entailment. Alternative-encoder checks (LaBSE, multilingual-e5-base) cover source fidelity only. No human evaluation is reported: rating files prepared for an earlier planned evaluation contained LLM-generated pre-annotations and were withdrawn.
+- **Quality versus diversity:** Automated acceptance indicates consistency with frozen operational criteria, not independently demonstrated grammatical correctness or semantic entailment. Alternative-encoder checks (LaBSE, multilingual-e5-base) cover source fidelity only. No human evaluation is reported.
+- **Withdrawn annotation:** An online linguistic annotation of LLM-generated Kazakh paraphrases was carried out by three native Kazakh-speaking colleagues of the authors on 20–25 September 2026. *What is known:* the annotators received blank rating sheets. *What is inferred:* after the ratings were returned, the authors observed characteristics of the ratings that were not consistent with independent human judgements; the possibility that they were generated or pre-filled with automated assistance is an inference from these characteristics and has not been confirmed. The authors cannot verify how the returned ratings were produced. The ratings were therefore withdrawn, and no annotation data are reported, used or distributed in this repository or in the Zenodo record.
 - **Compute:** Candidate generation and embedding-based curation introduce additional tokens, inference calls, latency, processing and, for proprietary models, API cost.
 - **Parameter sensitivity:** Archived-pool truncation at smaller K is not the same as generating new candidate pools using K-specific prompts. BGE-M3 cosine thresholds should not be transferred directly to LaBSE or multilingual-e5-base.
 - **Downstream classification:** Row-equalised corpora can have very different numbers of unique utterances. Unique-matched TF-IDF results use **five training-example sampling seeds**, while XLM-R analyses use **three classifier-training seeds**. These measure different sources of variability. Neither study independently regenerates the synthetic corpora; the transformer experiments are instance-matched, not unique-matched.
-- **Test-set provenance:** Downstream classification uses a frozen held-out labelled set of 1,000 utterances (100 per intent). Its origin should be supported by source documentation, not inferred from filenames.
+- **Test-set provenance:** Downstream classification uses a frozen held-out labelled set of 1,000 utterances (100 per intent), written by the authors.
 
 ## Reproducibility and software
 
@@ -72,9 +73,9 @@ Some studies need additional experiment-specific libraries, pretrained model wei
 
 ## Supplementary materials
 
-**[KAZ-Div supplementary release — Zenodo]([https://zenodo.org/records/23916224](https://doi.org/10.5281/zenodo.23506385))**.
+**[KAZ-Div supplementary release — Zenodo](https://doi.org/10.5281/zenodo.23916224)**
 
 
 ## Citation
 
-Cite the [Zenodo record](https://doi.org/10.5281/zenodo.23506385) when using the supplementary data, and cite the KAZ-Div paper when its final publication metadata become available. The replacement [`CITATION.cff`](CITATION.cff) in this update package aligns the author list with the revised manuscript (Arailym Tleubayeva, Zhansaya Makhambetova, Altynbek Seitenov and Pinar Sarisaray Boluk). Verify the author list and publication metadata with all authors before creating a software release.
+Cite the [Zenodo record](https://doi.org/10.5281/zenodo.23506385) when using the supplementary data, and cite the KAZ-Div paper when its final publication metadata become available. Authors: Arailym Tleubayeva, Zhansaya Makhambetova, Altynbek Seitenov and Pinar Sarisaray Boluk (see [`CITATION.cff`](CITATION.cff)).
