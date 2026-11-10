@@ -4,7 +4,7 @@
 
 <img width="6800" height="4012" alt="kaz_div_framework_v2" src="https://github.com/user-attachments/assets/63ef29ba-7806-4aa4-9e40-2e79602c5237" />
 
-**Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.23916224](https://zenodo.org/records/24104684) (revised release, November 2026). 
+**Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.24104684](https://zenodo.org/records/24104684) (revised release, November 2026). 
 
 This repository contains implementation code, frozen research inputs, task prompts, experimental configurations, saved results, statistical comparisons, and reproducibility records for the KAZ-Div study. The supplementary package on Zenodo is the referenced data deposit; some supplementary tables are not mirrored at the repository root.
 
