@@ -2,7 +2,8 @@
 
 **KAZ-Div: A Model-Agnostic Framework for Quality-Constrained Diversity in Kazakh Language Generation**
 
-<img width="6800" height="4012" alt="kaz_div_framework_v2" src="https://github.com/user-attachments/assets/63ef29ba-7806-4aa4-9e40-2e79602c5237" />
+<img width="6800" height="4327" alt="figure1" src="https://github.com/user-attachments/assets/9a857a5f-d2e1-4314-8d63-c744524f4725" />
+
 
 **Supplementary materials:** [Zenodo DOI: 10.5281/zenodo.24104684](https://zenodo.org/records/24104684) (revised release, November 2026). 
 
